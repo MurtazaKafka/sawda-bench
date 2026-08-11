@@ -1,0 +1,169 @@
+54 eval items, 6 held out, systems: ['frontier_naive', 'frontier_audience', 'frontier_instructional']
+  frontier_naive           seed-02
+  frontier_naive           seed-04
+  frontier_naive           seed-07
+  frontier_naive           lit-01
+  frontier_naive           seed-01
+  frontier_naive           seed-08
+  frontier_naive           seed-06
+  frontier_naive           seed-05
+  frontier_naive           lit-02
+  frontier_naive           lit-03
+  frontier_naive           lit-04  frontier_naive           lit-05
+
+  frontier_naive           lit-06
+  frontier_naive           lit-07
+  frontier_naive           lit-08
+  frontier_naive           lit-10
+  frontier_naive           lit-11  frontier_naive           lit-12
+
+  frontier_naive           lit-13
+  frontier_naive           lit-14
+  frontier_naive           lit-15
+  frontier_naive           lit-16
+  frontier_naive           lit-17
+  frontier_naive           lit-18
+  frontier_naive           lit-19
+  frontier_naive           lit-20  frontier_naive           syn-01
+
+  frontier_naive           syn-02
+  frontier_naive           syn-04
+  frontier_naive           syn-06
+  frontier_naive           syn-07
+  frontier_naive           syn-08
+  frontier_naive           syn-09
+  frontier_naive           syn-10
+  frontier_naive           syn-11  frontier_naive           syn-12
+
+  frontier_naive           syn-13
+  frontier_naive           syn-14
+  frontier_naive           syn-15
+  frontier_naive           syn-16  frontier_naive           syn-17
+
+  frontier_naive           syn-18
+  frontier_naive           syn-19
+  frontier_naive           syn-20
+  frontier_naive           syn-21
+  frontier_naive           syn-22
+  frontier_naive           syn-23
+  frontier_naive           syn-24
+  frontier_naive           syn-25
+  frontier_naive           syn-26
+  frontier_naive           syn-27
+  frontier_naive           syn-30
+  frontier_naive           syn-31
+  frontier_naive           syn-32
+  frontier_audience        seed-01
+  frontier_audience        seed-02
+  frontier_audience        seed-04
+  frontier_audience        seed-05
+  frontier_audience        seed-06
+  frontier_audience        seed-07
+  frontier_audience        seed-08  frontier_audience        lit-01
+
+  frontier_audience        lit-02
+  frontier_audience        lit-03
+  frontier_audience        lit-04
+  frontier_audience        lit-05
+  frontier_audience        lit-06
+  frontier_audience        lit-07
+  frontier_audience        lit-08
+  frontier_audience        lit-10
+  frontier_audience        lit-11  frontier_audience        lit-12
+
+  frontier_audience        lit-13
+  frontier_audience        lit-14  frontier_audience        lit-15
+
+  frontier_audience        lit-16
+  frontier_audience        lit-17
+  frontier_audience        lit-18
+  frontier_audience        lit-20
+  frontier_audience        lit-19
+  frontier_audience        syn-01
+  frontier_audience        syn-02
+  frontier_audience        syn-04
+  frontier_audience        syn-06
+  frontier_audience        syn-07
+  frontier_audience        syn-08  frontier_audience        syn-09
+
+  frontier_audience        syn-10
+  frontier_audience        syn-11
+  frontier_audience        syn-12
+  frontier_audience        syn-13
+  frontier_audience        syn-14
+  frontier_audience        syn-15
+  frontier_audience        syn-16
+  frontier_audience        syn-17
+  frontier_audience        syn-18
+  frontier_audience        syn-19
+  frontier_audience        syn-20
+  frontier_audience        syn-21
+  frontier_audience        syn-22
+  frontier_audience        syn-23
+  frontier_audience        syn-24
+  frontier_audience        syn-25
+  frontier_audience        syn-26
+  frontier_audience        syn-27
+  frontier_audience        syn-30
+  frontier_audience        syn-31
+  frontier_audience        syn-32
+  frontier_instructional   lit-01
+  frontier_instructional   seed-05
+  frontier_instructional   seed-08
+  frontier_instructional   seed-02
+  frontier_instructional   seed-06
+  frontier_instructional   seed-07
+  frontier_instructional   lit-05
+  frontier_instructional   lit-02
+  frontier_instructional   lit-06
+  frontier_instructional   lit-07
+  frontier_instructional   lit-10
+  frontier_instructional   lit-11
+  frontier_instructional   lit-08
+  frontier_instructional   lit-12
+  frontier_instructional   lit-14
+  frontier_instructional   lit-13
+  frontier_instructional   lit-04
+  frontier_instructional   lit-16
+  frontier_instructional   seed-01
+  frontier_instructional   lit-18
+  frontier_instructional   seed-04
+  frontier_instructional   syn-02
+  frontier_instructional   lit-03
+  frontier_instructional   syn-06
+  frontier_instructional   syn-04
+  frontier_instructional   syn-08
+  frontier_instructional   lit-15
+  frontier_instructional   lit-17
+  frontier_instructional   syn-12
+  frontier_instructional   syn-11
+  frontier_instructional   syn-10
+  frontier_instructional   syn-13
+  frontier_instructional   syn-15
+  frontier_instructional   syn-14
+  frontier_instructional   syn-16
+  frontier_instructional   syn-18
+  frontier_instructional   lit-19
+  frontier_instructional   syn-17
+  frontier_instructional   syn-07
+  frontier_instructional   syn-01
+  frontier_instructional   lit-20
+  frontier_instructional   syn-09
+  frontier_instructional   syn-20
+  frontier_instructional   syn-25
+  frontier_instructional   syn-19
+  frontier_instructional   syn-24
+  frontier_instructional   syn-23
+  frontier_instructional   syn-21
+  frontier_instructional   syn-22
+  frontier_instructional   syn-26
+  frontier_instructional   syn-30
+  frontier_instructional   syn-27
+  frontier_instructional   syn-31
+  frontier_instructional   syn-32
+
+Per-system API cost:
+  gpt-oss-20b              calls=104   in=12535    out=53083    $0.0168
+  kimi-k3                  calls=216   in=87414    out=107163   $1.8697
+  TOTAL                                                     $1.8865
+EXIT=0

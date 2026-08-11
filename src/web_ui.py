@@ -15,6 +15,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SEEDS = ROOT / "drafts" / "tranche1_seed.jsonl"
 ITEMS = ROOT / "items" / "items.jsonl"
+RESULTS = ROOT / "results"
+PLAN = RESULTS / "judging_plan.json"
+TRANSLATIONS = RESULTS / "translations.jsonl"
+JUDGMENTS = RESULTS / "human_judgments.jsonl"
 PORT = 8017
 
 
@@ -64,6 +68,8 @@ class Handler(BaseHTTPRequestHandler):
         elif self.path == "/api/state":
             self._send({"seeds": read_jsonl(SEEDS),
                         "items": read_jsonl(ITEMS)})
+        elif self.path == "/api/judge/state":
+            self._send(judge_state())
         else:
             self.send_error(404)
 
@@ -90,8 +96,55 @@ class Handler(BaseHTTPRequestHandler):
         elif self.path == "/api/item/update":
             upsert(ITEMS, payload["item"])
             self._send({"ok": True})
+        elif self.path == "/api/judge/save":
+            self._send(judge_save(payload))
         else:
             self.send_error(404)
+
+
+def judge_state():
+    """Judging plan + next blind pair. System identity never leaves here."""
+    if not TRANSLATIONS.exists():
+        return {"total": 0, "done": 0, "next": None,
+                "msg": "No translations yet — Phase 3 must finish first."}
+    if not PLAN.exists():
+        import judge_ui
+        from config import SYSTEMS
+        have = {r["system"] for r in read_jsonl(TRANSLATIONS)}
+        if have != set(SYSTEMS):
+            return {"total": 0, "done": 0, "next": None,
+                    "msg": "Phase 3 still running — waiting on: " +
+                           ", ".join(sorted(set(SYSTEMS) - have))}
+        judge_ui.build_plan()
+    order = [tuple(p) for p in json.loads(PLAN.read_text())["order"]]
+    done = {(r["item_id"], r["system"]) for r in read_jsonl(JUDGMENTS)}
+    items = {it["id"]: it for it in read_jsonl(ITEMS)}
+    trans = {(r["item_id"], r["system"]): r for r in read_jsonl(TRANSLATIONS)}
+    nxt = None
+    for idx, pair in enumerate(order):
+        if pair not in done:
+            it = items[pair[0]]
+            nxt = {"idx": idx, "direction": it["direction"],
+                   "source": it["utterance_src"], "context": it["context"],
+                   "candidate": trans[pair]["output"]}
+            break
+    return {"total": len(order), "done": len(done), "next": nxt}
+
+
+def judge_save(payload):
+    order = [tuple(p) for p in json.loads(PLAN.read_text())["order"]]
+    item_id, system = order[payload["idx"]]
+    done = {(r["item_id"], r["system"]) for r in read_jsonl(JUDGMENTS)}
+    if (item_id, system) in done:
+        return {"ok": False, "err": "already judged"}
+    rec = {"item_id": item_id, "system": system,
+           "intent": int(payload["intent"]),
+           "appropriateness": int(payload["appropriateness"]),
+           "note": payload.get("note", "").strip(), "judge": "human"}
+    JUDGMENTS.parent.mkdir(exist_ok=True)
+    with JUDGMENTS.open("a") as f:
+        f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+    return {"ok": True}
 
 
 PAGE = r"""<!doctype html>
@@ -189,6 +242,7 @@ kbd{background:var(--chip);border-radius:4px;padding:1px 6px;font-size:.75rem}
   <nav>
     <button id="tab-seed" class="on" onclick="show('seed')">1 · Seed items</button>
     <button id="tab-val" onclick="show('val')">2 · Validate (Gate A)</button>
+    <button id="tab-judge" onclick="show('judge')">3 · Judge (Gate B)</button>
   </nav>
 </header>
 <main>
@@ -267,6 +321,15 @@ kbd{background:var(--chip);border-radius:4px;padding:1px 6px;font-size:.75rem}
       <kbd>←</kbd><kbd>→</kbd> navigate — edits in the fields are saved with
       the decision</div>
   </section>
+
+  <section id="judge" style="display:none">
+    <div class="progress"><span id="jcount"></span>
+      <div class="bar"><i id="jbar"></i></div><span id="jtotal"></span></div>
+    <div class="vcard" id="jcard">Loading…</div>
+    <div class="keys">System identity is hidden and order is randomized.
+      keys: <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> intent ·
+      <kbd>q</kbd>…<kbd>u</kbd> appropriateness 1–7 · <kbd>Enter</kbd> submit</div>
+  </section>
 </main>
 <div class="toast" id="toast"></div>
 <script>
@@ -294,11 +357,12 @@ function $(id){return document.getElementById(id)}
 function toast(m){const t=$("toast");t.textContent=m;t.classList.add("show");
   setTimeout(()=>t.classList.remove("show"),1400)}
 function show(tab){
-  $("seed").style.display=tab==="seed"?"":"none";
-  $("val").style.display=tab==="val"?"":"none";
-  $("tab-seed").classList.toggle("on",tab==="seed");
-  $("tab-val").classList.toggle("on",tab==="val");
+  for(const t of ["seed","val","judge"]){
+    $(t).style.display=tab===t?"":"none";
+    $("tab-"+t).classList.toggle("on",tab===t);
+  }
   if(tab==="val")renderVal();
+  if(tab==="judge")loadJudge();
 }
 function dirs(){
   const fa=$("direction").value==="fa2en";
@@ -450,7 +514,74 @@ async function decide(approve){
   toast((approve?"approved ":"rejected ")+it.id);
   renderVal();
 }
+/* ---------- judge tab ---------- */
+let J=null, jIntent=0, jApprop=0;
+async function loadJudge(){
+  J=await (await fetch("/api/judge/state")).json();
+  jIntent=0;jApprop=0;
+  $("jcount").textContent=J.done+" judged";
+  $("jtotal").textContent="of "+J.total;
+  $("jbar").style.width=J.total?Math.min(100,J.done/J.total*100)+"%":"0";
+  if(!J.total){$("jcard").innerHTML=J.msg||"No judging plan yet.";return}
+  if(!J.next){$("jcard").innerHTML=
+    "<b>All "+J.total+" judgments collected — Gate B complete.</b> "+
+    "Tell Claude to continue with Phase 5.";return}
+  const n=J.next, faSrc=n.direction==="fa2en";
+  $("jcard").innerHTML=`
+   <div class="meta"><span>#${J.done+1} / ${J.total}</span>
+     <span>${n.direction}</span><span>system hidden</span></div>
+   <label>source</label>
+   <div class="hint ${faSrc?'fa':''}" style="font-size:${faSrc?'1.15rem':'1rem'};
+     ${faSrc?'direction:rtl;line-height:1.9':''}">${esc(n.source)}</div>
+   <label>context</label>
+   <div class="hint">${esc(n.context)}</div>
+   <label>candidate translation</label>
+   <div class="hint ${faSrc?'':'fa'}" style="font-size:${faSrc?'1rem':'1.15rem'};
+     ${faSrc?'':'direction:rtl;line-height:1.9'}">${esc(n.candidate)}</div>
+   <label>intent</label>
+   <div class="btns" id="jint">
+     <button class="ghost" onclick="setInt(3)">3 · preserved</button>
+     <button class="ghost" onclick="setInt(2)">2 · degraded</button>
+     <button class="ghost" onclick="setInt(1)">1 · inverted / deleted</button>
+   </div>
+   <label>appropriateness (1 = badly wrong register … 7 = exactly right)</label>
+   <div class="btns" id="japp">${[1,2,3,4,5,6,7].map(k=>
+     `<button class="ghost" onclick="setApp(${k})">${k}</button>`).join("")}
+   </div>
+   <label>note (optional)</label>
+   <input id="jnote">
+   <div class="btns">
+     <button class="primary" onclick="submitJudge()">Submit & next (Enter)</button>
+   </div>`;
+}
+function mark(divId,val,offset){
+  [...$(divId).children].forEach((b,i)=>{
+    b.style.background=(i===offset)?"var(--acc2)":"";
+    b.style.color=(i===offset)?"#fff":"";});
+}
+function setInt(v){jIntent=v;mark("jint",v,3-v)}
+function setApp(v){jApprop=v;mark("japp",v,v-1)}
+async function submitJudge(){
+  if(!jIntent||!jApprop){toast("pick intent and appropriateness");return}
+  const r=await fetch("/api/judge/save",{method:"POST",body:JSON.stringify(
+    {idx:J.next.idx,intent:jIntent,appropriateness:jApprop,
+     note:$("jnote").value})});
+  const d=await r.json();
+  if(!d.ok){toast(d.err);return}
+  loadJudge();
+}
 document.addEventListener("keydown",e=>{
+  if($("judge").style.display!=="none"){
+    if(document.activeElement.tagName==="INPUT"){
+      if(e.key==="Enter")submitJudge();
+      return;
+    }
+    const app={"q":1,"w":2,"e":3,"r":4,"t":5,"y":6,"u":7};
+    if(["1","2","3"].includes(e.key))setInt(+e.key);
+    else if(app[e.key])setApp(app[e.key]);
+    else if(e.key==="Enter")submitJudge();
+    return;
+  }
   if($("val").style.display==="none")return;
   if(["INPUT","TEXTAREA","SELECT"].includes(document.activeElement.tagName))return;
   if(e.key==="a")decide(true);else if(e.key==="x")decide(false);

@@ -1,0 +1,335 @@
+54 eval items, 6 held out, systems: ['nllb', 'frontier_naive', 'frontier_audience', 'frontier_instructional', 'small_naive', 'small_audience']
+  frontier_naive           lit-06
+  frontier_naive           lit-02
+  frontier_naive           lit-04
+  frontier_naive           lit-07
+  frontier_naive           lit-08
+  frontier_naive           lit-03
+  frontier_naive           lit-01
+  frontier_naive           lit-05
+  frontier_naive           lit-12
+  frontier_naive           lit-11
+  frontier_naive           lit-10
+  frontier_naive           lit-14
+  frontier_naive           lit-13
+  frontier_naive           lit-16
+  frontier_naive           lit-17
+  frontier_naive           syn-02
+  frontier_naive           lit-19
+  frontier_naive           lit-18
+  frontier_naive           syn-01
+  frontier_naive           syn-04
+  frontier_naive           syn-06
+  frontier_naive           syn-10
+  frontier_naive           syn-09
+  frontier_naive           syn-07
+  frontier_naive           syn-08
+  frontier_naive           lit-20
+  frontier_naive           syn-11
+  frontier_naive           syn-12
+  frontier_naive           syn-13
+  frontier_naive           syn-17
+  frontier_naive           syn-14
+  frontier_naive           syn-15
+  frontier_naive           syn-16
+  frontier_naive           syn-21
+  frontier_naive           syn-18
+  frontier_naive           syn-23
+  frontier_naive           syn-19
+  frontier_naive           syn-24
+  frontier_naive           syn-20
+  frontier_naive           syn-25
+  frontier_naive           syn-26
+  frontier_naive           syn-27
+  frontier_naive           syn-30
+  frontier_naive           syn-22
+  frontier_audience        seed-02
+  frontier_audience        seed-05
+  frontier_naive           syn-31
+  frontier_audience        seed-04
+  frontier_audience        seed-01
+  frontier_audience        seed-06
+  frontier_naive           syn-32
+  frontier_audience        seed-07
+  frontier_audience        lit-02
+  frontier_audience        lit-03
+  frontier_audience        seed-08
+  frontier_audience        lit-04
+  frontier_audience        lit-08
+  frontier_audience        lit-01
+  frontier_audience        lit-06
+  frontier_audience        lit-07
+  frontier_audience        lit-10
+  frontier_audience        lit-05
+  frontier_audience        lit-12
+  frontier_audience        lit-11
+  frontier_audience        lit-14
+  frontier_audience        lit-16
+  frontier_audience        lit-13
+  frontier_audience        lit-18
+  frontier_audience        lit-15
+  frontier_audience        lit-20
+  frontier_audience        lit-17
+  frontier_audience        lit-19
+  frontier_audience        syn-04
+  frontier_audience        syn-02
+  frontier_audience        syn-01
+  frontier_audience        syn-07
+  frontier_audience        syn-09
+  frontier_audience        syn-06
+  frontier_audience        syn-10
+  frontier_audience        syn-11
+  frontier_audience        syn-13
+  frontier_audience        syn-12
+  frontier_audience        syn-17
+  frontier_audience        syn-14
+  frontier_audience        syn-16
+  frontier_audience        syn-18
+  frontier_audience        syn-19
+  frontier_audience        syn-15
+  frontier_audience        syn-22
+  frontier_audience        syn-21
+  frontier_audience        syn-20
+  frontier_audience        syn-23
+  frontier_audience        syn-24
+  frontier_instructional   seed-01
+  frontier_audience        syn-25
+  frontier_instructional   seed-02
+  frontier_audience        syn-27
+  frontier_instructional   seed-04
+  frontier_audience        syn-30
+  frontier_instructional   seed-05
+  frontier_instructional   seed-06
+  frontier_instructional   seed-08
+  frontier_instructional   lit-01
+  frontier_instructional   lit-03
+  frontier_instructional   seed-07
+  frontier_audience        syn-26
+  frontier_instructional   lit-05
+  frontier_instructional   lit-06
+  frontier_instructional   lit-02
+  frontier_instructional   lit-10
+  frontier_instructional   lit-08
+  frontier_instructional   lit-07
+  frontier_instructional   lit-14
+  frontier_instructional   lit-13
+  frontier_instructional   lit-12
+  frontier_instructional   lit-11
+  frontier_instructional   lit-17
+  frontier_instructional   lit-04
+  frontier_audience        syn-31
+  frontier_instructional   lit-20
+  frontier_instructional   syn-01
+  frontier_instructional   lit-15
+  frontier_instructional   syn-02
+  frontier_instructional   syn-04
+  frontier_instructional   syn-06
+  frontier_audience        syn-32
+  frontier_instructional   syn-07
+  frontier_instructional   syn-09
+  frontier_instructional   syn-08
+  frontier_instructional   syn-12
+  frontier_instructional   syn-10
+  frontier_instructional   syn-11
+  frontier_instructional   syn-14
+  frontier_instructional   syn-15
+  frontier_instructional   syn-18
+  frontier_instructional   syn-16
+  frontier_instructional   syn-17
+  frontier_instructional   lit-18
+  frontier_instructional   syn-19
+  frontier_instructional   lit-19
+  frontier_instructional   lit-16
+  frontier_instructional   syn-13
+  frontier_instructional   syn-24
+  frontier_instructional   syn-27
+  frontier_instructional   syn-21
+  frontier_instructional   syn-20
+  frontier_instructional   syn-31
+  frontier_instructional   syn-25
+  frontier_instructional   syn-23
+  frontier_instructional   syn-30
+  frontier_instructional   syn-22
+  small_naive              seed-04
+  small_naive              seed-02
+  small_naive              seed-01
+  small_naive              seed-06
+  frontier_instructional   syn-26
+  small_naive              seed-05
+  small_naive              lit-04
+  small_naive              lit-02
+  small_naive              lit-03
+  small_naive              lit-01
+  small_naive              seed-07
+  small_naive              lit-07
+  small_naive              seed-08
+  small_naive              lit-06
+  small_naive              lit-10
+  small_naive              lit-12
+  small_naive              lit-08
+  small_naive              lit-05
+  small_naive              lit-13
+  small_naive              lit-14
+  small_naive              lit-11
+  small_naive              lit-15
+  small_naive              lit-17
+  small_naive              lit-16
+  small_naive              lit-19
+  small_naive              syn-06
+  small_naive              syn-04
+  small_naive              syn-07
+  frontier_instructional   syn-32
+  small_naive              syn-11
+  small_naive              syn-09
+  small_naive              syn-08
+  small_naive              syn-10
+  small_naive              syn-15
+  small_naive              syn-13
+  small_naive              syn-14
+  small_naive              syn-17
+  small_naive              syn-18
+  small_naive              syn-12
+  small_naive              syn-20
+  small_naive              syn-22
+  small_naive              syn-21
+  small_naive              syn-16
+  small_naive              syn-24
+  small_naive              syn-19
+  small_naive              syn-26
+  small_naive              syn-23
+  small_naive              syn-27
+  small_naive              syn-30
+  small_audience           seed-04
+  small_naive              syn-31
+  small_naive              syn-32
+  small_audience           seed-05
+  small_audience           seed-02
+  small_audience           seed-01
+  small_audience           seed-08
+  small_audience           lit-02
+  small_audience           lit-01
+  small_audience           lit-03
+  small_audience           lit-04
+  small_audience           seed-07
+  small_audience           lit-06
+  small_audience           lit-07
+  small_audience           lit-05
+  small_audience           lit-14
+  small_audience           lit-10
+  small_audience           lit-08
+  small_audience           lit-12
+  small_audience           lit-13
+  small_audience           lit-17
+  small_audience           lit-16
+  small_audience           syn-04
+  small_audience           syn-07
+  small_audience           lit-15
+  small_audience           lit-20
+  small_audience           lit-19
+  small_audience           syn-11
+  small_audience           syn-10
+  small_audience           syn-08
+  small_audience           syn-12
+  small_audience           syn-06
+  small_audience           syn-13
+  small_audience           syn-09
+  small_audience           syn-15
+  small_audience           syn-17
+  small_audience           syn-18
+  small_audience           syn-16
+  small_audience           syn-19
+  small_audience           syn-20
+  small_audience           syn-21
+  small_audience           syn-22
+  small_audience           syn-23
+  small_audience           syn-24
+  small_audience           syn-26
+  small_audience           syn-30
+  small_audience           syn-25
+  small_audience           syn-31
+Traceback (most recent call last):
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/venv/lib/python3.12/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1411, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 285, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1249, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1105, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/venv/lib/python3.12/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 498, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/venv/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.fireworks.ai', port=443): Read timed out. (read timeout=180)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/src/translate.py", line 185, in <module>
+    main()
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/src/translate.py", line 171, in main
+    f.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/src/translate.py", line 160, in api_task
+    r = fw.call(model, msgs, max_tokens=1024)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/src/fw.py", line 68, in call
+    resp = requests.post(API_URL, headers=headers, json=body, timeout=180)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/venv/lib/python3.12/site-packages/requests/api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/venv/lib/python3.12/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/venv/lib/python3.12/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/venv/lib/python3.12/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/murtaza/Downloads/school/classes-summer-26/sawda/sawda-bench/venv/lib/python3.12/site-packages/requests/adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.fireworks.ai', port=443): Read timed out. (read timeout=180)
+EXIT=1

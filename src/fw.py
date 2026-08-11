@@ -7,6 +7,7 @@ a running dollar estimate is available via cost_report().
 import hashlib
 import json
 import os
+import threading
 import time
 from pathlib import Path
 
@@ -15,6 +16,7 @@ import requests
 from config import CALLS_DIR, PRICES
 
 API_URL = "https://api.fireworks.ai/inference/v1/chat/completions"
+_lock = threading.Lock()
 
 
 def _load_env():
@@ -41,7 +43,7 @@ def _load_cache(model: str) -> dict:
     cache = {}
     p = _cache_path(model)
     if p.exists():
-        with p.open() as f:
+        with _lock, p.open() as f:
             for line in f:
                 rec = json.loads(line)
                 cache[rec["key"]] = rec
@@ -62,21 +64,36 @@ def call(model: str, messages: list, max_tokens: int = 1024,
 
     headers = {"Authorization": f"Bearer {os.environ['FIREWORKS_API_KEY']}",
                "Content-Type": "application/json"}
-    for attempt in range(4):
-        resp = requests.post(API_URL, headers=headers, json=body, timeout=180)
+    for attempt in range(5):
+        try:
+            resp = requests.post(API_URL, headers=headers, json=body,
+                                 timeout=240)
+        except (requests.exceptions.Timeout,
+                requests.exceptions.ConnectionError):
+            if attempt == 4:
+                raise
+            time.sleep(2 ** attempt * 2)
+            continue
         if resp.status_code == 200:
             break
-        if resp.status_code in (429, 500, 502, 503) and attempt < 3:
+        if resp.status_code in (429, 500, 502, 503) and attempt < 4:
             time.sleep(2 ** attempt * 2)
             continue
         raise RuntimeError(f"Fireworks {resp.status_code}: {resp.text[:400]}")
     data = resp.json()
-    text = data["choices"][0]["message"]["content"]
+    msg = data["choices"][0]["message"]
+    text = msg.get("content")
+    if text is None:
+        raise RuntimeError(
+            f"no content (finish_reason="
+            f"{data['choices'][0].get('finish_reason')}, "
+            f"reasoning tokens only) — raise max_tokens")
     usage = data["usage"]
     rec = {"key": key, "request": body, "text": text, "usage": usage,
            "ts": time.time()}
-    with _cache_path(model).open("a") as f:
-        f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+    with _lock:
+        with _cache_path(model).open("a") as f:
+            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
     return {"text": text, "usage": usage, "cached": False}
 
 

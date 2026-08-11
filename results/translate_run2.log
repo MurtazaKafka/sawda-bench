@@ -1,0 +1,21 @@
+54 eval items, 6 held out, systems: ['nllb', 'frontier_naive', 'frontier_audience', 'frontier_instructional', 'small_naive', 'small_audience']
+  small_naive              syn-02
+  frontier_audience        syn-08
+  frontier_naive           lit-15
+  FAILED small_naive lit-18: 'content'
+  FAILED small_naive lit-20: 'content'
+  FAILED small_naive syn-01: 'content'
+  FAILED small_naive syn-25: 'content'
+  FAILED small_audience seed-06: 'content'
+  FAILED small_audience lit-11: 'content'
+  FAILED small_audience lit-18: 'content'
+  FAILED small_audience syn-01: 'content'
+  FAILED small_audience syn-02: 'content'
+  FAILED small_audience syn-14: 'content'
+  FAILED small_audience syn-27: 'content'
+  FAILED small_audience syn-32: 'content'
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/512 [00:00<?, ?it/s]Loading weights: 100%|██████████| 512/512 [00:00<00:00, 40877.98it/s]
+[transformers] Both `max_new_tokens` (=120) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
