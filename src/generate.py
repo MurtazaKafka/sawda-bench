@@ -55,6 +55,11 @@ def main():
     if errors:
         print("\n".join(errors))
         sys.exit(1)
+    # Preserve Gate A state: edits made in items.jsonl win over stale drafts.
+    if ITEMS.exists():
+        with ITEMS.open() as f:
+            current = {it["id"]: it for it in map(json.loads, f) if it}
+        items = [current.get(it["id"], it) for it in items]
     ITEMS.parent.mkdir(exist_ok=True)
     with ITEMS.open("w") as f:
         for item in items:
