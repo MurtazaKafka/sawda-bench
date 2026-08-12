@@ -68,7 +68,7 @@ Judge families: systems are Kimi (B–D) and gpt-oss (E–F); judges are DeepSee
 | F gpt-oss-20b audience  | API measured     |       0.2237 |
 | E/F gpt-oss-20b         | self-hosted est. |       0.4167 |
 
-Assumptions for self-hosted rows: $2.50/GPU-hour (A100-80G class, mid-2026 on-demand); NLLB-600M ~40k msgs/GPU-h batched; gpt-oss-20B ~6k msgs/GPU-h via vLLM on short messages. API rows use measured tokens at pinned prices (kimi-k3 $3/$15 per 1M in/out; gpt-oss-20b $0.07/$0.30; docs.fireworks.ai, 2026-08-10). Note gpt-oss-20b's measured cost includes its (sometimes unbounded) reasoning tokens: 4 of 108 small-system calls produced no translation at any budget and are scored as deleted intent.
+Assumptions for self-hosted rows: $2.50/GPU-hour (A100-80G class, mid-2026 on-demand); NLLB-600M ~40k msgs/GPU-h batched; gpt-oss-20B ~6k msgs/GPU-h via vLLM on short messages. API rows use measured tokens at pinned prices (kimi-k3 $3/$15 per 1M in/out; gpt-oss-20b $0.07/$0.30; docs.fireworks.ai, 2026-08-10). API rows are per 1,000 SUCCESSFUL messages: 4 of 108 small-system calls produced no translation at any reasoning budget; their (unrecorded) tokens are excluded from the averages. The 3 of those 4 that fell in the judged subset were rated intent 1, appropriateness 1.
 
 ## Five side-by-side failures
 
@@ -199,5 +199,5 @@ Key challenge:
 - n=30 items judged (of 54 evaluated; 60 validated minus 6 held out for few-shot), 180 judgments; single validator who is also the item author/editor; no inter-annotator data.
 - Both LLM-judge families failed calibration; results are human-only and the judged subset, while stratified, is small.
 - Items are fictional and partly synthetic (32 of 60); synthetic items were human-validated but share pragmatic cores with their parents.
-- kimi-k3 outputs sometimes include visible deliberation/commentary; judged verbatim as delivered text.
+- kimi-k3 outputs sometimes include visible deliberation/commentary; judged verbatim as delivered text. This also means the 'blind' judging batches carry stylistic tells (headers, leaked reasoning) that could let a judge guess the model family, though never the system label.
 - The Dari register target is Afghan; several systems drifted to Iranian Farsi (see flags table) — flagged by the validator, penalized mainly in appropriateness.

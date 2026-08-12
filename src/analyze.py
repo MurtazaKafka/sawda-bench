@@ -272,10 +272,12 @@ def write_results_md(overall, headline, byclass, fl, costs, ags, df,
               "batched; gpt-oss-20B ~6k msgs/GPU-h via vLLM on short "
               "messages. API rows use measured tokens at pinned prices "
               "(kimi-k3 $3/$15 per 1M in/out; gpt-oss-20b $0.07/$0.30; "
-              "docs.fireworks.ai, 2026-08-10). Note gpt-oss-20b's measured "
-              "cost includes its (sometimes unbounded) reasoning tokens: 4 "
-              "of 108 small-system calls produced no translation at any "
-              "budget and are scored as deleted intent.\n")
+              "docs.fireworks.ai, 2026-08-10). API rows are per 1,000 "
+              "SUCCESSFUL messages: 4 of 108 small-system calls produced no "
+              "translation at any reasoning budget; their (unrecorded) "
+              "tokens are excluded from the averages. The 3 of those 4 that "
+              "fell in the judged subset were rated intent 1, "
+              "appropriateness 1.\n")
     md.append("## Five side-by-side failures\n")
     for e in ex:
         md.append(f"### {e['item']}\n")
@@ -299,7 +301,10 @@ def write_results_md(overall, headline, byclass, fl, costs, ags, df,
               "synthetic items were human-validated but share pragmatic "
               "cores with their parents.\n"
               "- kimi-k3 outputs sometimes include visible deliberation/"
-              "commentary; judged verbatim as delivered text.\n"
+              "commentary; judged verbatim as delivered text. This also "
+              "means the 'blind' judging batches carry stylistic tells "
+              "(headers, leaked reasoning) that could let a judge guess the "
+              "model family, though never the system label.\n"
               "- The Dari register target is Afghan; several systems "
               "drifted to Iranian Farsi (see flags table) — flagged by the "
               "validator, penalized mainly in appropriateness.\n")
