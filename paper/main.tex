@@ -1,0 +1,188 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, citecolor=blue, linkcolor=blue, urlcolor=blue]{hyperref}
+\newcommand{\tbd}[1]{\textcolor{red}{[TBD: #1]}}
+\newcommand{\bench}{\textsc{Sawda}}
+
+\title{\bench: A Benchmark for Intent-Preserving Translation \\ in Cross-Border Trade Communication}
+
+\author{
+  Murtaza Nikzad\thanks{Davidson College. Contact: munikzad@davidson.edu} \and
+  \tbd{co-authors: R. Ramanujan? J. Leigh (see acknowledgments note)}
+}
+\date{Working draft --- August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Machine translation systems and large language models (LLMs) now produce lexically accurate translations for most high-resource language pairs, yet everyday cross-border communication continues to fail in a way that accuracy metrics do not capture: the words are translated and the intent is lost. We study this failure in the setting where its cost is most concrete, trade communication between Persian-speaking (Farsi/Dari), English-speaking, and Chinese-speaking business partners. We introduce \bench{}\footnote{\textit{Sawda} is the Dari word for trade.}, a benchmark of 60 culturally loaded, native-validated trade-communication items in Dari/Farsi and English, built from author-written seeds, the pragmatics literature, and validated synthetic augmentation. Each item pairs a source utterance and its relationship context with a literal rendering, an intent-preserving rendering, and an annotation of the pragmatic content at risk. In a pilot study, we compare six open-weights systems spanning three families: a dedicated low-resource MT model (NLLB-600M), a frontier-class open LLM (Kimi K3) under naive, audience-targeted, and instructional prompting, and a 20B self-hostable model (gpt-oss-20b) under naive and audience-targeted prompting. In 180 blind judgments by a native Dari speaker, no system reliably preserved speaker intent: the best configuration fully preserved intent in 30\% of judgments. Explicit cultural instruction raised preservation over audience-targeting alone (30.0\% vs 16.7\%) but more than doubled catastrophic inversions (16.7\% vs 6.7\%), refining the threshold effect reported for appropriateness by \citet{tenzer2026pragmatics}: for intent, instruction adds both tails. Our preregistered direction hypothesis reversed: failures concentrated in English-to-Dari generation (16.7\% inversion or deletion vs 5.6\%), driven by broken or wrong-language output, indicating that generating Afghan Dari, not comprehending it, is the current bottleneck. The 20B model with a one-line audience wrapper matched the frontier model's human ratings at roughly 2\% of its API cost. Finally, two LLM-judge families topped out near 49\% exact agreement with native-speaker labels against a preregistered 80\% bar, so all evaluation numbers are human-labeled: for this task, the native-speaker judge is not yet automatable, which is itself the strongest argument for the benchmark.
+\end{abstract}
+
+\section{Introduction}
+
+Consider a real exchange between two business partners, one writing in Chinese, one reading in English. The Chinese message, rendered by the messaging platform's built-in translator, arrived as an accusation: ``then you didn't provide assistance.'' The same message, translated with attention to its context, was a request: ``do what you did before.'' Nothing in the sentence was mistranslated at the level of words. What failed was the transfer of intent, and the failure nearly damaged the relationship the sentence was trying to maintain.
+
+Failures of this kind are systematic rather than accidental. High-context communication cultures \citep{hall1976} encode obligation, refusal, deference, and face-work in forms that literal translation strips away. Persian taarof ritualizes offer and refusal so thoroughly that a literal ``no'' frequently means ``ask again'' \citep{beeman1986, koutlaki2002}. Chinese business communication routes disagreement and obligation through indirection and face management \citep{hwang1987, bcpragmatics2025}. When such utterances cross a language border through a literal translator, the pragmatic layer is silently deleted, and neither party learns that a deletion occurred.
+
+Recent work has begun to measure the cultural competence of LLMs, but the measurement has concentrated on monolingual behavior: whether a model can act appropriately within a culture \citep{sadr2025taarof, monazzah2025percul}, recall cultural knowledge \citep{myung2024blend, rao2024normad}, or reason over culture-specific commonsense \citep{charm2024}. The translation setting, where cultural competence must survive a language boundary, has received attention only recently and only for a single pair, with \citet{tenzer2026pragmatics} demonstrating for English-to-Japanese workplace email that prompting strategy substantially changes the cultural appropriateness of LLM translations. No benchmark exists for the triangle we study, and to our knowledge none exists for any pair involving Persian varieties, despite Dari's status as a low-resource language spoken by tens of millions \citep{nllb2022}.
+
+We make four contributions. First, we introduce \bench{}, a benchmark of 60 native-validated items for intent-preserving translation between Dari/Farsi and English in trade settings, constructed by a pipeline of author-written seeds, literature mining, LLM augmentation, and native-speaker validation, following the construction methodology of \citet{sadr2025taarof}; the Chinese arm of the intended triangle is designed but left to future work. Second, we define an evaluation protocol that scores translations on intent preservation rather than lexical adequacy, using blind native-speaker judgment on a three-point intent scale alongside a seven-point appropriateness scale, adapting the two-level design of \citet{tenzer2026pragmatics}. Third, we report a controlled pilot comparison of six open-weights configurations, with three findings: no system reliably preserves intent (best: 30\%); cultural instruction trades preservation against catastrophic inversion rather than dominating lighter prompting; and the failure asymmetry runs opposite to our preregistration, concentrating in Dari generation rather than Dari comprehension. Fourth, we show that two LLM-judge families fail to reproduce native-speaker intent labels (near 49\% exact agreement against an 80\% bar), establishing that the distinctions this task turns on are not currently automatable and motivating human-labeled benchmarks in this space.
+
+\section{Related Work}
+
+\subsection{Cultural competence benchmarks for LLMs}
+
+The nearest neighbor to our work is \textsc{TaarofBench} \citep{sadr2025taarof}, the first benchmark for the Persian politeness system, comprising 450 native-validated role-play scenarios across twelve interaction topics. Its findings motivate ours directly: frontier LLMs performed 40 to 48 points below native speakers when taarof was culturally appropriate, and responses rated polite by standard politeness metrics frequently violated taarof norms, evidence that Western-derived evaluation frameworks miss culture-specific pragmatics entirely. Notably, supervised fine-tuning and Direct Preference Optimization \citep{rafailov2023dpo} improved cultural alignment by 21.8 and 42.3 points respectively, establishing that the deficit is addressable with targeted data. \bench{} differs in task: \textsc{TaarofBench} asks whether a model can behave appropriately within Persian interaction; we ask whether intent survives translation out of it.
+
+The Persian evaluation ecosystem has expanded beyond politeness to story-driven cultural understanding \citep{monazzah2025percul} and alignment benchmarking \citep{pourbahman2025elab}. For Chinese, \textsc{CHARM} \citep{charm2024} measures culture-specific commonsense reasoning, and \textsc{MiLiC-Eval} \citep{milic2025} evaluates pragmatic response selection for China's minority languages, a task design we adapt. Cross-cultural knowledge benchmarks such as BLEnD \citep{myung2024blend} and NormAd \citep{rao2024normad} measure what models know about cultures; our concern is instead what translation destroys. Indirect speech acts, the mechanism underlying many of our items, have been benchmarked monolingually for Korean \citep{korean2025indirect}, again without a translation dimension.
+
+\subsection{Pragmatics and implicature in LLMs}
+
+That LLMs struggle with meaning beyond the literal has been documented since \citet{ruis2022implicature}, who showed that models fail zero-shot on conversational implicature of the kind formalized by \citet{grice1975}. Politeness theory \citep{brownlevinson1987} predicts where such failures concentrate: in face-threatening acts, where cultures diverge most in how much work the surface form performs. High- versus low-context communication \citep{hall1976} and cross-national value structure \citep{hofstede2001} provide the standard frame for why an utterance adequate in one culture arrives as rude, evasive, or accusatory in another. Persian taarof \citep{beeman1986, koutlaki2002} and Chinese face and favor dynamics \citep{hwang1987} are among the best-described such systems, and business pedagogy for Chinese explicitly trains the interpretation of euphemism and contextual cues that non-native speakers miss \citep{bcpragmatics2025}. \bench{} operationalizes these literatures as translation test items.
+
+\subsection{Culturally sensitive machine translation}
+
+Machine translation evaluation has historically prized adequacy and fluency, and modern massively multilingual systems extend coverage to low-resource languages including Dari \citep{nllb2022}, but coverage is not competence: lexical adequacy can be perfect while pragmatic content is deleted. The study closest to our experimental design is \citet{tenzer2026pragmatics}, which compared three prompting strategies for English-to-Japanese workplace email translation: a naive translate instruction, audience-targeted prompts specifying the recipient's cultural background and role, and instructional prompts encoding explicit Japanese communication norms. Using a convergent mixed-methods design that pairs text-level pragmatic coding under the cross-cultural pragmatics scheme of \citet{housekadar2021} with evaluations by 85 native-speaker recipients, they find that naive prompts yield only limited adaptation toward target-culture language patterns, audience-targeted prompts produce meaningful improvements, and instructional prompts produce the strongest textual adaptation. Recipient evaluations, however, reveal a threshold effect: instructional prompts do not raise perceived appropriateness or intention to comply significantly beyond audience-targeted prompts, suggesting that lightweight audience cues already capture most of the recipient-perceived gain. That result, in a management venue and for a single high-resource pair, validates the phenomenon, the two-level evaluation method, and the practical promise of context layers over dedicated training. \bench{} extends the question to a partially low-resource pair, replaces constructed polite-register emails with trade communication where the failure mode is categorical rather than gradational, and adds dedicated MT and self-hostable small models to the comparison, allowing the cost question to be posed directly.
+
+\section{The \bench{} Benchmark}
+
+\subsection{Task definition}
+Each item is a tuple $(u, c, t_{\ell}, t_{i}, a)$: a source utterance $u$ in Dari/Farsi or English; relationship context $c$ (roles, prior obligations, the live issue); a literal rendering $t_{\ell}$; an intent-preserving rendering $t_{i}$ into the target language; and an annotation $a$ of the pragmatic content at risk. Systems receive $(u, c)$ and produce a translation; evaluation asks which rendering their output realizes.
+
+\subsection{Failure taxonomy}
+Items are tagged with the pragmatic failure they are constructed to elicit: intent inversion (request read as accusation, as in the motivating example); ritual refusal read literally (taarof); obligation and face content deleted; register violation (deference stripped or inserted); indirect refusal read as assent. Our pilot results motivate one addition for scoring translations: generation failure (output empty, syntactically broken, or in the wrong language), which is a distinct failure family from pragmatic inversion and, as Section 5.3 shows, dominates one translation direction.
+
+\subsection{Construction pipeline}
+The pilot release contains 60 validated items in two directions: 40 Dari/Farsi to English and 20 English to Dari/Farsi. Items were sourced in three tranches: 8 seed items written by the first author, a native Dari speaker, from lived trade and family-business communication; 20 items drafted from documented pragmatics phenomena in the taarof and business-communication literatures \citep{beeman1986, koutlaki2002, hwang1987, bcpragmatics2025}; and 32 synthetic variants generated from the first two tranches following \citet{sadr2025taarof}, varying roles, goods, amounts, and relationships while preserving the pragmatic core. Every item passed native-speaker validation with inline editing; 11 drafts were edited during validation and items failing validation were discarded. All items are fictional and contain no real names, businesses, or identifying details. Six validated items are held out to supply few-shot exemplars for the instructional condition and are excluded from evaluation for all systems, leaving 54 evaluated items.
+
+\subsection{Benchmark statistics}
+The 60 validated items divide 40/20 by direction (Dari/Farsi$\to$English vs English$\to$Dari/Farsi) and 8/20/32 by tranche (seed / literature-grounded / synthetic variant). Source utterances average 11.6 words (10.3 for Dari/Farsi sources, 14.1 for English sources), reflecting the short, formulaic register of spoken trade exchanges. Table \ref{tab:classes} gives the failure-class composition together with pooled judgment outcomes on the 30-item judged subset, aggregated across the six systems from the per-system breakdown released with the benchmark. Indirect refusal read as assent is the hardest class to preserve fully (5.6\% of judgments rated preserved), while ritual refusal is the most polarized: systems either land it (36.1\% preserved, the highest of any class) or invert it outright (22.2\%, also the highest), consistent with taarof being an all-or-nothing translation decision.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrrrr}
+\toprule
+Failure class & Items & Judged & Pres. & Degr. & Inv. \\
+\midrule
+indirect\_refusal\_as\_assent & 13 & 36 & 0.056 & 0.861 & 0.083 \\
+intent\_inversion & 10 & 42 & 0.167 & 0.762 & 0.071 \\
+obligation\_face\_deleted & 10 & 30 & 0.267 & 0.667 & 0.067 \\
+register\_violation & 12 & 36 & 0.194 & 0.694 & 0.111 \\
+ritual\_refusal\_literal & 15 & 36 & 0.361 & 0.417 & 0.222 \\
+\bottomrule
+\end{tabular}
+\caption{Failure-class composition (items of 60) and pooled human-judgment outcomes over the judged subset (Judged = judgments, 6 systems $\times$ judged items of that class). Aggregated from the per-system table in the benchmark release.}
+\label{tab:classes}
+\end{table}
+
+\section{Experimental Setup}
+
+\subsection{Systems}
+Six configurations, all open-weights, all reproducible with a single Fireworks API key (the NLLB baseline ran on a Modal CPU worker): (A) \textbf{nllb}: NLLB-200-distilled-600M \citep{nllb2022}, the standard dedicated low-resource MT baseline, with per-item Dari (prs\_Arab) or Farsi (pes\_Arab) codes assigned during validation. (B) \textbf{frontier naive}: Kimi K3, the strongest open instruct model available at run time, prompted only to translate. (C) \textbf{frontier audience}: the same model with a system prompt stating who is writing to whom, their relationship, and the live situation. (D) \textbf{frontier instructional}: C plus explicit guidance on taarof mechanics, indirectness, and face, plus three few-shot exemplars from the held-out split. (E, F) \textbf{small naive / small audience}: gpt-oss-20b, a self-hostable 20B model, under the B and C prompts. All calls at temperature 0, cached, with measured token counts.
+
+\subsection{Evaluation protocol}
+Blind native-speaker judgment on a three-point intent scale (3 preserved, 2 degraded, 1 inverted or deleted) and a seven-point appropriateness scale, with optional notes and quick-flags (Iranian register, broken syntax, wrong language). The protocol follows the two-level design of \citet{tenzer2026pragmatics}, pairing text-level analysis with recipient evaluation, and adapts the core-category coding of \citet{housekadar2021} to ground the failure taxonomy. A stratified random subset of 30 items (15 per direction) was judged across all six systems, 180 judgments, system identity hidden and order randomized, by a single native Dari-speaking judge (the first author). Two LLM judges were calibrated against these labels under a preregistered 80\% exact-agreement bar with one permitted rubric iteration: a scripted DeepSeek v4-pro judge and a panel of Claude Fable 5 agents. Both failed calibration (Section 5.5), so machine labels are reported only as an agreement finding and every evaluation number in this paper is human-labeled. Total API spend for the pilot was \$3.83.
+
+\section{Results}
+
+\subsection{No system reliably preserves intent}
+Table \ref{tab:overall} reports the headline. The best configuration, the frontier model with explicit cultural instruction, fully preserved intent in 30.0\% of judgments. Every other configuration fell between 13.3\% and 23.3\%. The dominant outcome everywhere is degradation: the message arrives, the force does not. The dedicated MT baseline is worst on appropriateness (3.47) and near-worst on preservation (13.3\%), confirming that the deployed default for these language pairs deletes pragmatic content as a matter of course.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrrrr}
+\toprule
+System & $n$ & Preserved & Degraded & Inverted & Approp. \\
+\midrule
+A nllb-600M & 30 & 0.133 & 0.767 & 0.100 & 3.47 \\
+B kimi-k3 naive & 30 & 0.200 & 0.667 & 0.133 & 3.40 \\
+C kimi-k3 audience & 30 & 0.167 & 0.767 & 0.067 & 4.73 \\
+D kimi-k3 instructional & 30 & 0.300 & 0.533 & 0.167 & 4.57 \\
+E gpt-oss-20b naive & 30 & 0.200 & 0.667 & 0.133 & 4.67 \\
+F gpt-oss-20b audience & 30 & 0.233 & 0.700 & 0.067 & 4.93 \\
+\bottomrule
+\end{tabular}
+\caption{Intent preservation and mean appropriateness by system; 180 blind human judgments over a stratified 30-item subset. Rates are shares of judgments rated 3 (preserved), 2 (degraded), and 1 (inverted or deleted).}
+\label{tab:overall}
+\end{table}
+
+\subsection{Cultural instruction adds both tails}
+Preregistered question 1 asked whether explicit instruction (D) beats audience-targeting alone (C) on intent, given that \citet{tenzer2026pragmatics} found no significant recipient-side gain from instruction for appropriateness. For intent, instruction is not a null: D nearly doubles full preservation over C (30.0\% vs 16.7\%) while also more than doubling catastrophic inversion (16.7\% vs 6.7\%), and C retains higher appropriateness (4.73 vs 4.57). Explicit cultural machinery licenses aggressive pragmatic rewriting that either lands fully or badly misses. The threshold effect thus survives on the appropriateness axis and dissociates on the intent axis: instruction shifts probability mass from the safe middle to both tails. Practically, this argues for adaptive context layers, audience-targeting by default and heavy instruction only where the failure class demands it, rather than a single maximal prompt.
+
+\subsection{The asymmetry reversed: generation, not comprehension, is the bottleneck}
+Preregistered question 2 predicted that inversion would concentrate in the Dari-to-English direction, where high-context force must be recovered by inference. The data reversed it: inversion or deletion occurred in 16.7\% of English-to-Dari judgments versus 5.6\% of Dari-to-English (Table \ref{tab:direction}). Decomposition shows the reversal is driven by a failure family our preregistration did not separate: of the fifteen en2fa judgments rated 1, most carry wrong-language, broken-syntax, or empty-output flags rather than pragmatic inversions, and the naive frontier configuration alone drew broken-syntax flags on 25 of 30 judgments. Meanwhile the fa2en direction almost never inverts but almost never fully lands either: under the audience condition, 93.3\% of fa2en judgments were rated degraded. The two directions fail in different families. Into Dari, current models fail at the fluency layer before pragmatics is reached, consistent with Afghan Dari generation being undertrained rather than unactivated, the distinction \citet{tenzer2026pragmatics} could not probe for high-resource Japanese. Out of Dari, fluency survives and pragmatic force quietly dies, which is the failure mode of the motivating example.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{llrrrrr}
+\toprule
+System & Dir. & $n$ & Pres. & Degr. & Inv. & Appr. \\
+\midrule
+A nllb & en2fa & 15 & 0.133 & 0.800 & 0.067 & 4.00 \\
+A nllb & fa2en & 15 & 0.133 & 0.733 & 0.133 & 2.93 \\
+B naive & en2fa & 15 & 0.067 & 0.733 & 0.200 & 3.20 \\
+B naive & fa2en & 15 & 0.333 & 0.600 & 0.067 & 3.60 \\
+C audience & en2fa & 15 & 0.267 & 0.600 & 0.133 & 4.13 \\
+C audience & fa2en & 15 & 0.067 & 0.933 & 0.000 & 5.33 \\
+D instruct. & en2fa & 15 & 0.200 & 0.467 & 0.333 & 3.93 \\
+D instruct. & fa2en & 15 & 0.400 & 0.600 & 0.000 & 5.20 \\
+E small naive & en2fa & 15 & 0.200 & 0.600 & 0.200 & 4.73 \\
+E small naive & fa2en & 15 & 0.200 & 0.733 & 0.067 & 4.60 \\
+F small aud. & en2fa & 15 & 0.267 & 0.667 & 0.067 & 5.00 \\
+F small aud. & fa2en & 15 & 0.200 & 0.733 & 0.067 & 4.87 \\
+\bottomrule
+\end{tabular}
+\caption{Results by direction. en2fa failures are dominated by generation breakdown (wrong language, broken syntax, empty output); fa2en failures are dominated by degradation of pragmatic force.}
+\label{tab:direction}
+\end{table}
+
+\subsection{A 20B model with a one-line wrapper matches the frontier model at 2\% of the cost}
+The small audience configuration (F) reached 23.3\% preservation with tied-lowest inversion (6.7\%) and the highest appropriateness in the study (4.93), statistically indistinguishable from the frontier configurations at this sample size, at \$0.22 per 1{,}000 messages of measured API cost versus \$10.32 to \$10.55 for the frontier model, and an estimated \$0.42 self-hosted (Table \ref{tab:costs}). Nothing in the pilot supports the necessity of an expensive model; the value concentrates in the context layer and the native-validated data that measures it.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{llr}
+\toprule
+System & Basis & USD / 1k msgs \\
+\midrule
+A nllb-600M & self-hosted est. & 0.06 \\
+B kimi-k3 naive & API measured & 10.32 \\
+C kimi-k3 audience & API measured & 10.55 \\
+D kimi-k3 instructional & API measured & 7.87 \\
+E gpt-oss-20b naive & API measured & 0.10 \\
+F gpt-oss-20b audience & API measured & 0.22 \\
+E/F gpt-oss-20b & self-hosted est. & 0.42 \\
+\bottomrule
+\end{tabular}
+\caption{Cost per 1{,}000 successful messages. API rows use measured tokens at pinned prices; self-hosted rows assume \$2.50 per A100-class GPU hour with stated throughput assumptions. Failed calls (4 of 108 small-system calls produced no translation) are excluded from the cost basis and scored as deleted intent where judged.}
+\label{tab:costs}
+\end{table}
+
+\subsection{Native-speaker judgment is not yet automatable for this task}
+Against the preregistered 80\% exact-agreement bar, the scripted DeepSeek judge reached 48.3\% exact intent agreement (96.6\% within one point, appropriateness $r=0.38$) and the Claude Fable 5 panel reached 48.9\% (99.4\%, $r=0.63$), both after one permitted rubric iteration. The confusion structure is systematic: judges credit gist transfer as preservation, while the native judge docks for meaning-bearing lexical choices (Iranian \textit{faktor} where Afghan Dari uses \textit{bel} for invoice), dialect drift in load-bearing words, and softened force. The distinctions that decide whether intent survives are currently invisible to strong general-purpose judges, echoing the pattern in \citet{nikzad2026dpo} of consequential capabilities moving beneath the metrics used to track them. All evaluation numbers in this paper are therefore human-labeled, and we release the machine judgments only as calibration data.
+
+\section{Discussion}
+Three implications. First, for deployment: the pilot's best cost-quality point is a small self-hostable model behind a thin audience-context layer, which reframes culturally competent translation as a data and product problem, per-culture context packs and native-validated benchmarks, rather than a frontier-model problem; scaling to a new culture means building its pack and test set, not training a new model. Second, for the science of cultural NLP: the direction decomposition suggests low-resource cultural competence has two separable bottlenecks, generation fluency (absent capability) and pragmatic transfer (unactivated capability), and benchmarks that do not separate them will misattribute one to the other. Third, for evaluation methodology: a judge-agreement ceiling near 49\% on a task where humans are confident suggests intent preservation belongs, for now, to the class of properties that must be measured by the affected community itself, an argument for participatory benchmark construction in exactly the languages least represented in training data.
+
+\section{Limitations}
+This is a pilot. The judged subset is 30 items and 180 judgments; the validator, judge, and first author are the same person, and no inter-annotator agreement can be reported yet; a second native Dari annotator on a subset is the immediate next step. Thirty-two of sixty items are synthetic variants sharing pragmatic cores with their parents. The adversarial audit noted stylistic tells in some blind batches that could in principle hint at system identity. Kimi K3 sometimes emits visible deliberation in its output field, judged verbatim as delivered text. Four small-model calls produced no output at any token budget; three fell in the judged subset and are scored as deleted intent. The Chinese arm of the intended triangle is designed but unbuilt, and all claims are scoped to trade-register Dari/Farsi and English.
+
+\section{Ethical Considerations}
+Dari and Hazaragi materials involve communities under active persecution. All benchmark items are fictional and contain no real names, businesses, or identifying details; the motivating example is de-identified and used with the consent of the conversation's owner \tbd{confirm written consent before release}. The single-annotator design concentrates interpretive authority in one speaker of one dialect; we scope claims accordingly and invite community annotation in the public release.
+
+\section{Conclusion}
+\bench{} turns a familiar frustration, the translated message that says the words and betrays the meaning, into a measured phenomenon: on native-validated trade communication, no current open system preserves speaker intent even a third of the time, cultural instruction buys preservation at the price of catastrophic error, the binding constraint for Dari is generation rather than comprehension, and the human judge remains unautomatable. The benchmark, code, translations, and all 180 human judgments are released at \tbd{repo and dataset links} to make the next claim about culturally competent translation a checkable one.
+
+\section*{Acknowledgments}
+\tbd{Jonathan Leigh for the motivating problem, the real-world example, and Chinese-side verification in the planned extension; R. Ramanujan for advising; confirm roles and consent before release.}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

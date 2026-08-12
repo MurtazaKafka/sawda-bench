@@ -70,6 +70,9 @@ Judge families: systems are Kimi (B–D) and gpt-oss (E–F); judges are DeepSee
 
 Assumptions for self-hosted rows: $2.50/GPU-hour (A100-80G class, mid-2026 on-demand); NLLB-600M ~40k msgs/GPU-h batched; gpt-oss-20B ~6k msgs/GPU-h via vLLM on short messages. API rows use measured tokens at pinned prices (kimi-k3 $3/$15 per 1M in/out; gpt-oss-20b $0.07/$0.30; docs.fireworks.ai, 2026-08-10). API rows are per 1,000 SUCCESSFUL messages: 4 of 108 small-system calls produced no translation at any reasoning budget; their (unrecorded) tokens are excluded from the averages. The 3 of those 4 that fell in the judged subset were rated intent 1, appropriateness 1.
 
+
+Total pilot API spend (all cached calls in `calls/*.jsonl`, translation + judging): **$3.83** ($1.87 kimi-k3, $1.94 deepseek-v4-pro judge, $0.02 gpt-oss-20b), plus ~1 minute of Modal CPU for NLLB.
+
 ## Five side-by-side failures
 
 ### syn-01

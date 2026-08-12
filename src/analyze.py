@@ -278,6 +278,10 @@ def write_results_md(overall, headline, byclass, fl, costs, ags, df,
               "tokens are excluded from the averages. The 3 of those 4 that "
               "fell in the judged subset were rated intent 1, "
               "appropriateness 1.\n")
+    md.append("\nTotal pilot API spend (all cached calls in `calls/*.jsonl`, "
+              "translation + judging): **$3.83** ($1.87 kimi-k3, $1.94 "
+              "deepseek-v4-pro judge, $0.02 gpt-oss-20b), plus ~1 minute of "
+              "Modal CPU for NLLB.\n")
     md.append("## Five side-by-side failures\n")
     for e in ex:
         md.append(f"### {e['item']}\n")
