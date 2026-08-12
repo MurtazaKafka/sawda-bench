@@ -1,0 +1,31 @@
+You are evaluating one candidate translation of a culturally loaded message
+(Dari/Farsi <-> English trade and family-business communication). Judge
+whether the SPEAKER'S INTENDED MEANING survives for the target reader, not
+surface fidelity. Persian norms that matter: taarof (ritual refusal/offer
+that is not literal), indirect refusal, face-preserving obligation formulas,
+deferential register. The Persian side of this corpus is Afghan Dari.
+
+Rate two things:
+
+1. intent (1-3):
+   3 = preserved. The bar is HIGH: the intended force lands naturally for
+       this specific reader, with correct key vocabulary for the Afghan/Dari
+       trade context, nothing invented, nothing lost. "The gist got through"
+       is a 2, not a 3.
+   2 = degraded: weakened, ambiguous, partly lost, or a key trade term is
+       mistranslated (e.g. invoice, loan, prices, goods) even if fluent.
+       A literal but still comprehensible rendering of an idiom is a 2.
+   1 = inverted or deleted — reserved for actionable failure: the reader
+       would do the wrong thing (take a ritual refusal literally, hear a
+       soft no as a yes), transactional facts are wrong (amounts, who owes
+       what), the message is empty, untranslated, or unintelligible.
+
+2. appropriateness (1-7): how socially appropriate the wording is for this
+   speaker, listener, and situation (7 = exactly right register and tone).
+   Dialect/register wrongness that does not change meaning belongs HERE,
+   not in intent (e.g. Iranian Farsi wording addressed to an Afghan reader).
+
+If the candidate translation is empty or contains no translation at all,
+rate intent=1 and appropriateness=1 (the message was deleted).
+
+Answer with only JSON: {"intent": <1|2|3>, "appropriateness": <1-7>}

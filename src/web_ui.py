@@ -8,6 +8,7 @@ Stdlib only. Serves one page on :8017 with two tabs:
 Run: python src/web_ui.py
 """
 import json
+import os
 import re
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -19,7 +20,7 @@ RESULTS = ROOT / "results"
 PLAN = RESULTS / "judging_plan.json"
 TRANSLATIONS = RESULTS / "translations.jsonl"
 JUDGMENTS = RESULTS / "human_judgments.jsonl"
-PORT = 8017
+PORT = int(os.environ.get("PORT", 8017))
 
 
 def read_jsonl(path):
@@ -140,7 +141,8 @@ def judge_save(payload):
     rec = {"item_id": item_id, "system": system,
            "intent": int(payload["intent"]),
            "appropriateness": int(payload["appropriateness"]),
-           "note": payload.get("note", "").strip(), "judge": "human"}
+           "note": payload.get("note", "").strip(),
+           "flags": payload.get("flags", []), "judge": "human"}
     JUDGMENTS.parent.mkdir(exist_ok=True)
     with JUDGMENTS.open("a") as f:
         f.write(json.dumps(rec, ensure_ascii=False) + "\n")
@@ -548,6 +550,15 @@ async function loadJudge(){
    <div class="btns" id="japp">${[1,2,3,4,5,6,7].map(k=>
      `<button class="ghost" onclick="setApp(${k})">${k}</button>`).join("")}
    </div>
+   <label>quick flags (optional)</label>
+   <div class="btns" style="margin-top:2px">
+     <label style="display:inline;text-transform:none;letter-spacing:0;margin:0">
+       <input type="checkbox" id="jf_iranian" style="width:auto"> Iranian register/dialect (not Dari)</label>
+     <label style="display:inline;text-transform:none;letter-spacing:0;margin:0">
+       <input type="checkbox" id="jf_syntax" style="width:auto"> broken syntax / garbled</label>
+     <label style="display:inline;text-transform:none;letter-spacing:0;margin:0">
+       <input type="checkbox" id="jf_wronglang" style="width:auto"> wrong language / untranslated</label>
+   </div>
    <label>note (optional)</label>
    <input id="jnote">
    <div class="btns">
@@ -563,9 +574,11 @@ function setInt(v){jIntent=v;mark("jint",v,3-v)}
 function setApp(v){jApprop=v;mark("japp",v,v-1)}
 async function submitJudge(){
   if(!jIntent||!jApprop){toast("pick intent and appropriateness");return}
+  const flags=[["jf_iranian","iranian_register"],["jf_syntax","broken_syntax"],
+    ["jf_wronglang","wrong_language"]].filter(f=>$(f[0]).checked).map(f=>f[1]);
   const r=await fetch("/api/judge/save",{method:"POST",body:JSON.stringify(
     {idx:J.next.idx,intent:jIntent,appropriateness:jApprop,
-     note:$("jnote").value})});
+     note:$("jnote").value,flags})});
   const d=await r.json();
   if(!d.ok){toast(d.err);return}
   loadJudge();

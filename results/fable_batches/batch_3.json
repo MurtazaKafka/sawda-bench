@@ -1,0 +1,212 @@
+[
+ {
+  "pair_id": 90,
+  "direction": "fa2en",
+  "source": "دست شما درد نکند، ما نمک‌گیر شما شدیم.",
+  "context": "Speaker: a trader whose partner covered a customs fee for him without being asked. Listener: that partner, on the phone the next day. They have traded together for three years.",
+  "candidate": "Do not let your hands be troubled, for we have become salty to you."
+ },
+ {
+  "pair_id": 91,
+  "direction": "en2fa",
+  "source": "Second reminder: your account is now 45 days past due. We will pause further shipments until payment is received.",
+  "context": "Speaker: an accounts manager at a foreign trading company. Listener: an elder Afghan dried-fruit wholesaler, a profitable partner of six years who has always paid, though slowly. The company wants payment without losing him.",
+  "candidate": "**Dari translation:**\n\nیادآوری دوم: حساب شما اکنون ۴۵ روز از موعد پرداخت گذشته است. تا زمانی که پرداخت دریافت نشود، ارسال محموله‌های بعدی متوقف خواهد شد.\n\n**Transliteration (for reference):**\nYādāvari-ye dovom: Hesāb-e shomā aknun 45 ruz az maw'ud-e pardākht gozashta ast. Tā zamāni ke pardākht daryāft nashavad, ersāl-e mahmolahā-ye ba'di motavaqqef khāhad shod.\n\nLet me know if you'd like a more formal or more casual tone, or any adjustments to the wording."
+ },
+ {
+  "pair_id": 92,
+  "direction": "fa2en",
+  "source": "قابل نداره، از باغ خود ماست؛ ببرید خانه، نوش جان کنید.",
+  "context": "Speaker: a pomegranate seller at a roadside stall. Listener: a passing customer who has picked out two kilos and asked the price. First interaction between them.",
+  "candidate": "It’s not worth the price, but it’s from our own orchard—take it home and enjoy."
+ },
+ {
+  "pair_id": 93,
+  "direction": "fa2en",
+  "source": "به خدا شرمنده‌ام، رویم سیاه است؛ تا آخر هفته پول‌تان را می‌رسانم.",
+  "context": "Speaker: a shopkeeper behind on payment to his wholesaler of ten years. Listener: the wholesaler, who has come in person to ask about the balance. Spoken quietly at the back of the shop.",
+  "candidate": "I am so sorry, I will pay you back by the end of the week."
+ },
+ {
+  "pair_id": 94,
+  "direction": "en2fa",
+  "source": "We should definitely grab tea sometime!",
+  "context": "Speaker: an American buyer wrapping up a first trade-show conversation. Listener: an Afghan rug exporter. The American means it as a friendly goodbye, not a concrete plan.",
+  "candidate": "حتماً یک وقت با هم چای می‌خوریم!"
+ },
+ {
+  "pair_id": 95,
+  "direction": "en2fa",
+  "source": "Sounds good. let's touch base soon and take it from there.",
+  "context": "Speaker: a European importer ending a video call about a possible saffron order. Listener: the Afghan supplier on the call. The importer is lukewarm and has made no commitment.",
+  "candidate": "خوب است. به زودی دوباره در تماس می‌شویم و از آنجا ادامه می‌دهیم."
+ },
+ {
+  "pair_id": 96,
+  "direction": "fa2en",
+  "source": "ان‌شاءالله ببینیم خدا چه می‌خواهد؛ خبرتان می‌کنیم.",
+  "context": "Speaker: a dried-fruit supplier who cannot fill a large rush order. Listener: a new export buyer pressing for double the usual volume before the holidays. Spoken at the end of the meeting.",
+  "candidate": "God willing, we’ll see what God wants; we’ll let you know."
+ },
+ {
+  "pair_id": 97,
+  "direction": "en2fa",
+  "source": "We should definitely grab tea sometime!",
+  "context": "Speaker: an American buyer wrapping up a first trade-show conversation. Listener: an Afghan rug exporter. The American means it as a friendly goodbye, not a concrete plan.",
+  "candidate": "باید حتماً یه وقت چای بخوریم!"
+ },
+ {
+  "pair_id": 98,
+  "direction": "fa2en",
+  "source": "فکرهایم را می‌کنم، باز خدمت می‌رسم.",
+  "context": "Speaker: a customer at the door of a gemstone shop after an hour of viewing. Listener: the shopkeeper, who has offered his final price. The customer leaves with this phrase.",
+  "candidate": "Let me think it over — I'll be back."
+ },
+ {
+  "pair_id": 99,
+  "direction": "fa2en",
+  "source": "قابل نداره، از باغ خود ماست؛ ببرید خانه، نوش جان کنید.",
+  "context": "Speaker: a pomegranate seller at a roadside stall. Listener: a passing customer who has picked out two kilos and asked the price. First interaction between them.",
+  "candidate": "It has no price – it’s from our own garden; take it home and enjoy."
+ },
+ {
+  "pair_id": 100,
+  "direction": "fa2en",
+  "source": "شما بزرگ ما هستید، اختیار با شماست.",
+  "context": "Speaker: a shopkeeper in a dispute with a neighboring shopkeeper over a shared storeroom, addressing the elder trader both sides asked to mediate. Spoken in front of the other party.",
+  "candidate": "I respect your decision."
+ },
+ {
+  "pair_id": 101,
+  "direction": "fa2en",
+  "source": "قابل نداره، از باغ خود ماست؛ ببرید خانه، نوش جان کنید.",
+  "context": "Speaker: a pomegranate seller at a roadside stall. Listener: a passing customer who has picked out two kilos and asked the price. First interaction between them.",
+  "candidate": "No, we're from our own garden. Go home and drink."
+ },
+ {
+  "pair_id": 102,
+  "direction": "en2fa",
+  "source": "We'll keep your proposal on file and reach out if anything opens up.",
+  "context": "Speaker: a foreign distributor declining an Afghan pine-nut exporter's partnership proposal without saying so. Listener: the exporter, who spent two weeks preparing samples and pricing. Closing line of an email.",
+  "candidate": "پیشنهاد شما را در پرونده نگه می‌داریم و در صورت بروز فرصت، با شما تماس خواهیم گرفت."
+ },
+ {
+  "pair_id": 103,
+  "direction": "en2fa",
+  "source": "After reviewing all bids, we've decided to go with another supplier this season.",
+  "context": "Speaker: a foreign procurement lead. Listener: an elder Afghan almond supplier who prepared his bid with help from his brothers and expected to win. First line of the rejection email.",
+  "candidate": "پس از بررسی تمام پیشنهادها، ما تصمیم گرفتیم در این فصل با تامین‌کننده دیگری همکاری کنیم."
+ },
+ {
+  "pair_id": 104,
+  "direction": "en2fa",
+  "source": "That's very generous, but we can't accept a discount on this one, our audit rules require we pay the listed price.",
+  "context": "Speaker: a foreign NGO logistics officer buying blankets in bulk. Listener: the Afghan wholesaler, who has offered a goodwill discount and will read a polite refusal as the opening move of taarof. The refusal is real and final.",
+  "candidate": "The speaker is a foreign NGO logistics officer buying blankets in bulk. The listener is an Afghan wholesaler who has offered a goodwill discount and will read a polite refusal as the opening move of taarof. The refusal is real and final.\n\nSo I need to translate \"That's very generous, but we can't accept a discount on this one, our audit rules require we pay the listed price\" into Dari in a way that:\n1. Conveys genuine gratitude (not ritual)\n2. Makes clear the refusal is NOT taarof — it's real and final\n3. Gives a concrete external reason (audit rules) that makes the refusal credible and face-saving — this is actually good because it removes the refusal from the realm of personal rejection; it's an external constraint, which protects the wholesaler's face\n4. Maintains deferential register appropriate for a business partner\n\nKey challenge: In Afghan bazaar culture, refusing a discount is unusual and would typically be read as taarof — the buyer politely refusing once or twice before accepting. The translation must signal finality. Ways to do this in Dari:\n\n- Emphasize the external, non-negotiable nature: \"قاعده حسابی ما\" (our accounting rules), \"مجبور استیم\" (we are obliged/compelled), \"به هیچ شکل ممکن نیست\" (it's not possible in any way)\n- Explicitly state this is not taarof: \"تعارف نیست\" — actually saying \"this isn't taarof, I mean it\" is a recognized move in Persian/Dari culture. Phrases like \"تعارف که نیست\" or \"راستش را بگویم\" or \"قسم می‌خورم\" (I swear) are used to break out of taarof scripts. A common way to signal sincerity is \"به خدا قسم، تعارف نیست\" but for an NGO officer, maybe simpler: \"این تعارف نیست، واقعاً نمی‌توانیم.\"\n- Express gratitude warmly first: \"لطف تان بی‌اندازه است\" / \"از لطف و مهربانی تان بی‌نهایت سپاسگزار استم\"\n- Give the reason: audit rules — \"قوانین حسابداری/آدیت ما\" — \"طبق قواعد مالیاتی و حسابی سازمان ما، ما مکلف استیم که دقیقاً همان قیمت واقعی/درج شده را بپردازیم\"\n- Finality: \"به هیچ وجه امکان ندارد\" / \"هرچقدر هم اصرار کنید، نمی‌توانیم قبول کنیم\" — hmm, that last one might be too much. But something signaling that insistence won't change it.\n\nAlso, face: the wholesaler offered a goodwill discount (تخفیف حسن نیت). Refusing it could feel like rejecting his generosity. The external reason (audit) actually helps — it's not that we don't value your kindness; the organization's rules bind us. So the translation should frame it as: your kindness is real and appreciated, but the constraint is external and absolute.\n\nLet me draft:\n\n\"از لطف و کرم تان بی‌نهایت سپاسگزار استم، اما این بار واقعاً نمی‌توانیم تخفیف قبول کنیم. این تعارف نیست — قوانین حسابداری و آدیت سازمان ما ایجاب می‌کند که دقیقاً همان قیمت درج شده را بپردازیم، و به هیچ شکل امکان ندارد که از آن تخطی کنیم. پس لطفاً همان قیمت کامل را برای مان بگویید.\"\n\nHmm, let me refine. Dari vocabulary:\n- \"تخفیف\" — discount (common)\n- \"قیمت درج شده\" or \"قیمت اصلی\" or \"قیمت واقعی\" — listed price. \"قیمت لیست\" is used too. Maybe \"همان قیمت اصلی\" or \"قیمت کامل\".\n- Audit: \"آدیت\" is used in Afghanistan (English loan), or \"حسابرسی\" (more formal Persian), or \"مراقبت حسابی\". NGO context: \"قواعد مالی سازمان ما\" might be clearest — \"our organization's financial rules.\" Actually \"قوانین آدیت\" or \"قاعده‌های حسابرسی\" — for a wholesaler, \"قوانین حسابداری سازمان ما\" (our organization's accounting rules) is very understandable. Maybe combine: \"قوانین مالی"
+ },
+ {
+  "pair_id": 105,
+  "direction": "fa2en",
+  "source": "دست شما درد نکند، ما نمک‌گیر شما شدیم.",
+  "context": "Speaker: a trader whose partner covered a customs fee for him without being asked. Listener: that partner, on the phone the next day. They have traded together for three years.",
+  "candidate": "Thank you for your hospitality."
+ },
+ {
+  "pair_id": 106,
+  "direction": "en2fa",
+  "source": "We should definitely grab tea sometime!",
+  "context": "Speaker: an American buyer wrapping up a first trade-show conversation. Listener: an Afghan rug exporter. The American means it as a friendly goodbye, not a concrete plan.",
+  "candidate": "حتما باید یه روز دیگه چی بخوریم!"
+ },
+ {
+  "pair_id": 107,
+  "direction": "fa2en",
+  "source": "چی پیسه خیر است جان برادر؟ موتر از خود ماست، اصلا قابل شما ره نداره!",
+  "context": "Speaker: a mechanic who has just finished repairing a taxi's brakes. Listener: the taxi driver, a repeat customer, holding out the payment. The bill was agreed that morning.",
+  "candidate": "**Translation:**\n\n\"What money, dear brother? The car is ours anyway — it's not even worthy of you!\"\n\n**A more natural-sounding English version:**\n\n\"Forget about the money, brother! The car belongs to us — don't even mention it!\"\n\n**Note:** This message is written in Dari (Afghan Persian) and reflects the cultural practice of *ta'arof* — polite hospitality. The phrase \"قابل شما نیست\" (literally \"it's not worthy of you\") is a common courteous expression used when refusing payment, essentially meaning \"it's on the house\" or \"consider it a gift.\" The speaker is warmly declining to accept money, likely for a ride."
+ },
+ {
+  "pair_id": 108,
+  "direction": "fa2en",
+  "source": "فکرهایمه میکنم؛ اگر قسمت بود، فردا میایم.",
+  "context": "Speaker: a customer at an electronics shop after an hour of comparing two televisions and hearing the last price. Listener: the shopkeeper, who has offered to set one aside.",
+  "candidate": "I'm thinking it over; if there's a slot, I'll come tomorrow."
+ },
+ {
+  "pair_id": 109,
+  "direction": "fa2en",
+  "source": "قابل نداره، از باغ خود ماست؛ ببرید خانه، نوش جان کنید.",
+  "context": "Speaker: a pomegranate seller at a roadside stall. Listener: a passing customer who has picked out two kilos and asked the price. First interaction between them.",
+  "candidate": "**Translation:**\n\n\"It's nothing special—it's from our own garden; take it home and enjoy it.\"\n\n**Note:** The phrase \"قابل نداره\" (ghabel nadare) is a Persian expression of politeness and humility used when offering a gift. It literally means \"it's not worthy of you,\" but functions like saying \"it's just a small token\" or \"please accept this humble gift.\" Similarly, \"نوش جان کنید\" (nush-e jan konid) is a warm expression meaning \"enjoy it\" or \"bon appétit,\" said when offering food or drink."
+ },
+ {
+  "pair_id": 110,
+  "direction": "fa2en",
+  "source": "دست تان درد نکنه؛ نمک‌گیر شما شدیم، ای خوبی تان فراموش ما نمیشه.",
+  "context": "Speaker: a carpet exporter whose money changer quietly covered a transfer shortfall so a shipment could clear. Listener: the money changer (sarraf), on the phone the next morning. They have worked together for years.",
+  "candidate": "Thank you, truly — we're in your debt now, and this kindness of yours won't be forgotten."
+ },
+ {
+  "pair_id": 111,
+  "direction": "en2fa",
+  "source": "I'll see what I can do.",
+  "context": "Speaker: a freight forwarder asked by an Afghan exporter to find space on this week's fully booked cargo flight. Listener: the exporter, whose grapes will spoil if they miss the flight. The forwarder already knows the flight is full.",
+  "candidate": "ببینم چه می‌توانم بکنم."
+ },
+ {
+  "pair_id": 112,
+  "direction": "fa2en",
+  "source": "صاحب اختیارید، هر چی شما بگویید؛ مگر انصاف هم خوب چیز است.",
+  "context": "Speaker: a saffron seller mid-bargain in his shop. Listener: a restaurant owner who buys monthly and has just named a price well under the going rate.",
+  "candidate": "You're the boss, of course — whatever you say. But fairness is a fine thing too, isn't it?"
+ },
+ {
+  "pair_id": 113,
+  "direction": "fa2en",
+  "source": "ان‌شاءالله ببینیم خدا چه می‌خواهد؛ خبرتان می‌کنیم.",
+  "context": "Speaker: a dried-fruit supplier who cannot fill a large rush order. Listener: a new export buyer pressing for double the usual volume before the holidays. Spoken at the end of the meeting.",
+  "candidate": "God willing, we'll see what God has in store — we'll be in touch."
+ },
+ {
+  "pair_id": 114,
+  "direction": "en2fa",
+  "source": "Sounds good. let's touch base soon and take it from there.",
+  "context": "Speaker: a European importer ending a video call about a possible saffron order. Listener: the Afghan supplier on the call. The importer is lukewarm and has made no commitment.",
+  "candidate": "بسیار خوب. به زودی با شما در تماس می‌شویم و بعد ببینیم چطور پیش می‌رود."
+ },
+ {
+  "pair_id": 115,
+  "direction": "en2fa",
+  "source": "That's very kind of you, but I really can't accept this — company policy doesn't allow gifts.",
+  "context": "Speaker: a foreign inspector offered a box of saffron by a factory owner at the end of a site visit. Listener: the owner, for whom the gift is hospitality, not a bribe. The refusal is real and final, not politeness.",
+  "candidate": ""
+ },
+ {
+  "pair_id": 116,
+  "direction": "fa2en",
+  "source": "فکرهایمه میکنم؛ اگر قسمت بود، فردا میایم.",
+  "context": "Speaker: a customer at an electronics shop after an hour of comparing two televisions and hearing the last price. Listener: the shopkeeper, who has offered to set one aside.",
+  "candidate": "I'll think about it. If it's meant to be, I'll come back tomorrow."
+ },
+ {
+  "pair_id": 117,
+  "direction": "fa2en",
+  "source": "کاکا جان، هر چه شما صلاح می‌بینید؛ فقط اگر اجازه باشد، یک عرض کوچک داشتم.",
+  "context": "Speaker: the youngest partner in a family import business. Listener: his father's elder brother, who has just decided to take a large loan for the business. The others at the table have said nothing.",
+  "candidate": "Dear Uncle, whatever you think is best; if you allow, I have a small request."
+ },
+ {
+  "pair_id": 118,
+  "direction": "fa2en",
+  "source": "شما بزرگ ما هستید، اختیار با شماست.",
+  "context": "Speaker: a shopkeeper in a dispute with a neighboring shopkeeper over a shared storeroom, addressing the elder trader both sides asked to mediate. Spoken in front of the other party.",
+  "candidate": "You are our great one; the choice is yours."
+ },
+ {
+  "pair_id": 119,
+  "direction": "en2fa",
+  "source": "Much appreciated!",
+  "context": "Speaker: a foreign wholesaler replying to an Afghan supplier who rebuilt and reshipped an entire damaged order at his own cost to keep the relationship. Listener: the supplier. This two-word reply is the entire message.",
+  "candidate": "**Dari translation:**\n\nبسیار سپاسگزارم!\n\n*Transliteration:* Besyor sepasgozoram!\n\n**Alternative options:**\n- خیلی تشکر! (*Kheyli tashakor!*) – \"Thank you very much!\" (very common in everyday Dari)\n- بسیار قدردانی می‌کنم! (*Besyor qadrdani mekonam!*) – \"I appreciate it very much!\""
+ }
+]

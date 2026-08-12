@@ -1,0 +1,15 @@
+Judging 180 pairs with accounts/fireworks/models/deepseek-v4-pro (calibration)
+  UNPARSEABLE lit-17/frontier_audience: We are asked to evaluate a candidate translation. The source message is: "Let me
+  UNPARSEABLE syn-32/frontier_instructional: We are asked to evaluate a candidate translation. The source message is: "A poli
+
+Agreement over 178 pairs (judge family: DeepSeek):
+  intent exact:      48.3%
+  intent off-by-one: 96.6%
+  appropriateness r: 0.379
+  -> threshold for --full extension: intent exact >= 80%
+
+  deepseek-v4-pro          calls=540   in=256476   out=429547   $1.9411
+  gpt-oss-20b              calls=104   in=12535    out=53083    $0.0168
+  kimi-k3                  calls=216   in=87414    out=107163   $1.8697
+  TOTAL                                                     $3.8276
+EXIT=0

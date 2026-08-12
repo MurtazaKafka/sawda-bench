@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{llrrrrr}
+\toprule
+system & direction & n & preserved & degraded & inverted & approp \\
+\midrule
+C kimi-k3 audience & en2fa & 15.000 & 0.267 & 0.600 & 0.133 & 4.133 \\
+C kimi-k3 audience & fa2en & 15.000 & 0.067 & 0.933 & 0.000 & 5.333 \\
+D kimi-k3 instructional & en2fa & 15.000 & 0.200 & 0.467 & 0.333 & 3.933 \\
+D kimi-k3 instructional & fa2en & 15.000 & 0.400 & 0.600 & 0.000 & 5.200 \\
+B kimi-k3 naive & en2fa & 15.000 & 0.067 & 0.733 & 0.200 & 3.200 \\
+B kimi-k3 naive & fa2en & 15.000 & 0.333 & 0.600 & 0.067 & 3.600 \\
+A nllb-600M & en2fa & 15.000 & 0.133 & 0.800 & 0.067 & 4.000 \\
+A nllb-600M & fa2en & 15.000 & 0.133 & 0.733 & 0.133 & 2.933 \\
+F gpt-oss-20b audience & en2fa & 15.000 & 0.267 & 0.667 & 0.067 & 5.000 \\
+F gpt-oss-20b audience & fa2en & 15.000 & 0.200 & 0.733 & 0.067 & 4.867 \\
+E gpt-oss-20b naive & en2fa & 15.000 & 0.200 & 0.600 & 0.200 & 4.733 \\
+E gpt-oss-20b naive & fa2en & 15.000 & 0.200 & 0.733 & 0.067 & 4.600 \\
+\bottomrule
+\end{tabular}
+\caption{Intent preservation by system and direction (human labels, $n=180$ judgments over 30 items).}
+\label{tab:headline-human}
+\end{table}

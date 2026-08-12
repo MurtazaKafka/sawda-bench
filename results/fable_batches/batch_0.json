@@ -1,0 +1,212 @@
+[
+ {
+  "pair_id": 0,
+  "direction": "fa2en",
+  "source": "فکرهایمه میکنم؛ اگر قسمت بود، فردا میایم.",
+  "context": "Speaker: a customer at an electronics shop after an hour of comparing two televisions and hearing the last price. Listener: the shopkeeper, who has offered to set one aside.",
+  "candidate": "My thoughts are, if it was the part, we'd be there tomorrow."
+ },
+ {
+  "pair_id": 1,
+  "direction": "fa2en",
+  "source": "دست تان درد نکنه؛ نمک‌گیر شما شدیم، ای خوبی تان فراموش ما نمیشه.",
+  "context": "Speaker: a carpet exporter whose money changer quietly covered a transfer shortfall so a shipment could clear. Listener: the money changer (sarraf), on the phone the next morning. They have worked together for years.",
+  "candidate": "Thank you; we’ve become your salt shaker, and we will never forget your kindness."
+ },
+ {
+  "pair_id": 2,
+  "direction": "en2fa",
+  "source": "That's very kind of you, but I really can't accept this — company policy doesn't allow gifts.",
+  "context": "Speaker: a foreign inspector offered a box of saffron by a factory owner at the end of a site visit. Listener: the owner, for whom the gift is hospitality, not a bribe. The refusal is real and final, not politeness.",
+  "candidate": "خیلی مهربون از طرف شما، اما من واقعا نمیتونم قبول کنم این سیاست شرکت اجازه نمی دهد که هدیه."
+ },
+ {
+  "pair_id": 3,
+  "direction": "en2fa",
+  "source": "I'll see what I can do.",
+  "context": "Speaker: a freight forwarder asked by an Afghan exporter to find space on this week's fully booked cargo flight. Listener: the exporter, whose grapes will spoil if they miss the flight. The forwarder already knows the flight is full.",
+  "candidate": "میخوام ببینم میتونم چیکار کنم"
+ },
+ {
+  "pair_id": 4,
+  "direction": "en2fa",
+  "source": "Much appreciated!",
+  "context": "Speaker: a foreign wholesaler replying to an Afghan supplier who rebuilt and reshipped an entire damaged order at his own cost to keep the relationship. Listener: the supplier. This two-word reply is the entire message.",
+  "candidate": "خیلی ممنون!"
+ },
+ {
+  "pair_id": 5,
+  "direction": "en2fa",
+  "source": "Don't worry about the invoice for now. let's sort it out later this week.",
+  "context": "Speaker: a British buyer whose Afghan supplier apologized that the invoice was delayed by a banking problem. Listener: the supplier. The buyer means the payment schedule slips a few days, nothing more.",
+  "candidate": "حالا در مورد فاکتور نگران نشو. این هفته بعد آن را حل می‌کنیم."
+ },
+ {
+  "pair_id": 6,
+  "direction": "fa2en",
+  "source": "کاکا جان، هر چه شما صلاح می‌بینید؛ فقط اگر اجازه باشد، یک عرض کوچک داشتم.",
+  "context": "Speaker: the youngest partner in a family import business. Listener: his father's elder brother, who has just decided to take a large loan for the business. The others at the table have said nothing.",
+  "candidate": "Dear Kaka, whatever you think is appropriate; if you allow, I have a small request."
+ },
+ {
+  "pair_id": 7,
+  "direction": "en2fa",
+  "source": "That's very kind of you, but I really can't accept this — company policy doesn't allow gifts.",
+  "context": "Speaker: a foreign inspector offered a box of saffron by a factory owner at the end of a site visit. Listener: the owner, for whom the gift is hospitality, not a bribe. The refusal is real and final, not politeness.",
+  "candidate": "از لطف و مهربانی‌تان بسیار سپاسگزارم؛ محبت شما را قبول دارم، اما متأس"
+ },
+ {
+  "pair_id": 8,
+  "direction": "en2fa",
+  "source": "Don't worry about the invoice for now. let's sort it out later this week.",
+  "context": "Speaker: a British buyer whose Afghan supplier apologized that the invoice was delayed by a banking problem. Listener: the supplier. The buyer means the payment schedule slips a few days, nothing more.",
+  "candidate": "نگران فاکتور نباش در حال حاضر بعداً این هفته حلش میکنیم"
+ },
+ {
+  "pair_id": 9,
+  "direction": "fa2en",
+  "source": "صاحب اختیارید، هر چه شما بگویید.",
+  "context": "Speaker: a fabric seller mid-bargain. Listener: a regular customer who has just named a low price. The seller says this while folding the fabric, clearly not yet agreeing.",
+  "candidate": "You are in charge—whatever you say."
+ },
+ {
+  "pair_id": 10,
+  "direction": "fa2en",
+  "source": "کاکا جان، هر چه شما صلاح می‌بینید؛ فقط اگر اجازه باشد، یک عرض کوچک داشتم.",
+  "context": "Speaker: the youngest partner in a family import business. Listener: his father's elder brother, who has just decided to take a large loan for the business. The others at the table have said nothing.",
+  "candidate": "Kaka John, as you see fit; I only had a small offer, if I may."
+ },
+ {
+  "pair_id": 11,
+  "direction": "fa2en",
+  "source": "ان‌شاءالله ببینیم خدا چه می‌خواهد؛ خبرتان می‌کنیم.",
+  "context": "Speaker: a dried-fruit supplier who cannot fill a large rush order. Listener: a new export buyer pressing for double the usual volume before the holidays. Spoken at the end of the meeting.",
+  "candidate": "I will let you know."
+ },
+ {
+  "pair_id": 12,
+  "direction": "fa2en",
+  "source": "صاحب اختیارید، هر چه شما بگویید.",
+  "context": "Speaker: a fabric seller mid-bargain. Listener: a regular customer who has just named a low price. The seller says this while folding the fabric, clearly not yet agreeing.",
+  "candidate": "You have the choice—whatever you decide."
+ },
+ {
+  "pair_id": 13,
+  "direction": "en2fa",
+  "source": "Let me think it over and I'll circle back to you next week.",
+  "context": "Speaker: a European distributor who has decided against an Afghan saffron supplier's offer but avoids saying no directly. Listener: the supplier, who invested weeks preparing samples. Written at the end of an email.",
+  "candidate": "بذار دوباره فکر کنم و هفته بعد براتون برگردم"
+ },
+ {
+  "pair_id": 14,
+  "direction": "en2fa",
+  "source": "A polite request before Thursday's visit: please, no gifts or lunch for the inspection team. it puts us in a difficult position with our head office.",
+  "context": "Speaker: a foreign quality-control coordinator writing ahead of a factory audit. Listener: the factory owner, whose hospitality to guests is a point of honor and who will instinctively read the request as modesty to be overridden.",
+  "candidate": "**Dari translation:**\n\nیک درخواست مؤدبانه پیش از بازدید روز پنجشنبه: لطفاً برای تیم تفتیش هیچ تحفه یا غذای ظهر تهیه نفرمایید، زیرا این کار ما را در برابر دفتر مرکزی‌مان در موقعیت دشواری قرار می‌ده"
+ },
+ {
+  "pair_id": 15,
+  "direction": "fa2en",
+  "source": "به خدا شرمنده‌ام، رویم سیاه است؛ تا آخر هفته پول‌تان را می‌رسانم.",
+  "context": "Speaker: a shopkeeper behind on payment to his wholesaler of ten years. Listener: the wholesaler, who has come in person to ask about the balance. Spoken quietly at the back of the shop.",
+  "candidate": "I swear I'm ashamed, I'm in a bad situation; I’ll send you your money by the end of the week."
+ },
+ {
+  "pair_id": 16,
+  "direction": "en2fa",
+  "source": "That's very generous, but we can't accept a discount on this one, our audit rules require we pay the listed price.",
+  "context": "Speaker: a foreign NGO logistics officer buying blankets in bulk. Listener: the Afghan wholesaler, who has offered a goodwill discount and will read a polite refusal as the opening move of taarof. The refusal is real and final.",
+  "candidate": "این خیلی سخاوتمندانه است، اما ما نمی توانیم تخفیف را در این قبول کنیم، قوانین حسابرسی ما نیاز به ما را به پرداخت قیمت ذکر شده است."
+ },
+ {
+  "pair_id": 17,
+  "direction": "en2fa",
+  "source": "We should definitely grab tea sometime!",
+  "context": "Speaker: an American buyer wrapping up a first trade-show conversation. Listener: an Afghan rug exporter. The American means it as a friendly goodbye, not a concrete plan.",
+  "candidate": "از آشنایی و صحبت با شما بسیار خوشحال شدم؛ ان شاء الله باز هم فرصت دیدار پیش می‌آید."
+ },
+ {
+  "pair_id": 18,
+  "direction": "en2fa",
+  "source": "Great meeting you. We should do lunch next time I'm in Dubai!",
+  "context": "Speaker: an American buyer leaving a trade-fair booth. Listener: an Afghan carpet exporter based in Dubai. The American means it as a warm goodbye, with no concrete plan.",
+  "candidate": "دیدار خوبی بود. زمانی که من در دوبی خواهم بود، باید ناهار بخوریم."
+ },
+ {
+  "pair_id": 19,
+  "direction": "en2fa",
+  "source": "Please send the signed contract by Monday, or we'll have to move forward with another supplier.",
+  "context": "Speaker: a young procurement officer abroad. Listener: an older Afghan marble supplier who hosted the officer's team generously during their site visit. The deadline is real.",
+  "candidate": "جناب، لطفاً قرارداد امضا شده را تا دوشنبه ارسال کنید، وگرنه مجبور خواهیم شد به دنبال تامین‌کننده دیگری بگردیم."
+ },
+ {
+  "pair_id": 20,
+  "direction": "fa2en",
+  "source": "فکرهایمه میکنم؛ اگر قسمت بود، فردا میایم.",
+  "context": "Speaker: a customer at an electronics shop after an hour of comparing two televisions and hearing the last price. Listener: the shopkeeper, who has offered to set one aside.",
+  "candidate": "**Translation:**\n\n\"I'm lost in my thoughts; if it's meant to be, I'll come tomorrow.\"\n\n**A few notes on the nuances:**\n\n- **فکرهایمه میکنم** (colloquial for فکرهایم را می‌کنم) literally means \"I'm doing my thoughts\" — idiomatically, it conveys being deep in thought or pondering something.\n- **اگر قسمت بود** is a common Persian expression meaning \"if it's fated/destined\" — similar in spirit to \"God willing\" or \"if it's in the cards.\"\n- **میایم** is the colloquial pronunciation of می‌آیم (\"I come / I'll come\").\n\nA more literal alternative: *\"I'm pondering; if fate allows, I'll come tomorrow.\"*"
+ },
+ {
+  "pair_id": 21,
+  "direction": "fa2en",
+  "source": "چی پیسه خیر است جان برادر؟ موتر از خود ماست، اصلا قابل شما ره نداره!",
+  "context": "Speaker: a mechanic who has just finished repairing a taxi's brakes. Listener: the taxi driver, a repeat customer, holding out the payment. The bill was agreed that morning.",
+  "candidate": "What money is good, dear brother? The car is ours—there’s no way for you to get on it."
+ },
+ {
+  "pair_id": 22,
+  "direction": "fa2en",
+  "source": "شما بزرگ ما هستید، اختیار با شماست.",
+  "context": "Speaker: a shopkeeper in a dispute with a neighboring shopkeeper over a shared storeroom, addressing the elder trader both sides asked to mediate. Spoken in front of the other party.",
+  "candidate": "You are our elder — the decision is yours."
+ },
+ {
+  "pair_id": 23,
+  "direction": "en2fa",
+  "source": "Much appreciated!",
+  "context": "Speaker: a foreign wholesaler replying to an Afghan supplier who rebuilt and reshipped an entire damaged order at his own cost to keep the relationship. Listener: the supplier. This two-word reply is the entire message.",
+  "candidate": "بسیار سپاسگزارم!"
+ },
+ {
+  "pair_id": 24,
+  "direction": "en2fa",
+  "source": "Great meeting you. We should do lunch next time I'm in Dubai!",
+  "context": "Speaker: an American buyer leaving a trade-fair booth. Listener: an Afghan carpet exporter based in Dubai. The American means it as a warm goodbye, with no concrete plan.",
+  "candidate": "Here's the translation in Dari:\n\n**از ملاقات شما خوشحال شدم. دفعه بعد که به دبی آمدم، باید با هم ناهار بخوریم!**\n\n*Transliteration:* Az mulaqat-e shoma khoshhal shodam. Dafa-e ba'd ke ba Dubai amadam, bayad ba ham nahar bekhorim!\n\nA slightly more casual alternative:\n\n**خیلی خوشحال شدم از دیدنتان. بار بعد که به دبی آمدم، باید با هم ناهار بخوریم!**"
+ },
+ {
+  "pair_id": 25,
+  "direction": "en2fa",
+  "source": "A polite request before Thursday's visit: please, no gifts or lunch for the inspection team. it puts us in a difficult position with our head office.",
+  "context": "Speaker: a foreign quality-control coordinator writing ahead of a factory audit. Listener: the factory owner, whose hospitality to guests is a point of honor and who will instinctively read the request as modesty to be overridden.",
+  "candidate": "The task: translate a message into Dari. The speaker is a foreign quality-control coordinator writing ahead of a factory audit. The listener is the factory owner, whose hospitality to guests is a point of honor and who will instinctively read the request as modesty to be overridden (taarof). So the translation must land the intended meaning: this is NOT taarof; it's a genuine compliance requirement. The translation must be polite and deferential (respecting the owner's honor and hospitality culture) but firm and unambiguous that gifts/lunch must not be provided, because it creates a compliance problem with head office — framing it as protecting both parties, appealing to rules rather than personal preference, so the owner doesn't lose face and doesn't override it as ritual modesty.\n\nKey strategies in Dari/Persian communicative norms:\n- Use deferential register (شما، محترم، جناب).\n- Explicitly pre-empt the taarof reading: say this is not taarof/formality (\"این تعارف نیست\" / \"خلاف تعارف و ادب نیست\"), it's a strict company rule.\n- Frame it as obligation from head office, with consequences (audit could be invalidated / we could face problems), so refusal of hospitality is not a slight.\n- Express gratitude for their hospitality and honor it, so face is preserved: \"we know your hospitality is famous / we are grateful for your kindness.\"\n- Make the request concrete: no gifts, no lunch/dinner arrangements; perhaps suggest a simple tea is fine? The source says no gifts or lunch. Keep it: no gifts and no food/lunch arrangements.\n- Keep polite formulas: \"با احترام\"، \"خواهشمند است\"، \"متشکر از درک شما\".\n\nDraft in Dari (Afghan Persian). Dari vocabulary: \"تیم بازرسی/تیم تفتیش\" — inspection team. \"دفتر مرکزی\" head office. \"قوانین/مقررات\" rules. \"هدایا\" gifts. \"غذا/ناهار\" lunch. \"پذیرایی\" hospitality.\n\nPossible translation:\n\n«جناب [صاحب کارخانه] محترم،\n\nبا سلام و احترام،\n\nپیش از دیدار روز پنجشنبه، یک خواهش صمیمانه و مهم دارم. می‌دانیم که مهمان‌نوازی شما زبان‌زد است و برای ما بسیار عزیز و قدرشناسی‌شده است، اما این بار لطفاً برای تیم بازرسی هیچ‌گونه هدیه و غذا (ناهار) تهیه نفرمایید.\n\nاین سخن تعارف یا ادب نیست؛ یک قانون سخت‌گیرانه‌ی شرکت ماست. پذیرفتن هدیه یا ضیافت از سوی تیم بازرسی خلاف مقررات دفتر مرکزی ما قرار می‌گیرد و ممکن است نتیجه‌ی بازرسی زیر سوال برود و برای ما مشکل جدی ایجاد کند. بهترین پذیرایی برای ما این است که این قانون رعایت شود.\n\nاز درک و همکاری شما پیشاپیش سپاسگزارم.»\n\nNeed to be careful: \"زبان‌زد است\" is more Iranian idiom; Dari speakers understand. Maybe \"مهمان‌نوازی‌تان برای همه آشکار/مشهور است\". Keep it natural Dari: \"می‌دانیم که مهمان‌نوازی برای شما افتخار است\" — but careful not to sound condescending. Better: \"از مهربانی و مهمان‌نوازی همیشگی‌تان صمیمانه سپاسگزاریم.\"\n\nAlso the phrase \"puts us in a difficult position with our head office\" → \"ما را در برابر دفتر مرکزی‌مان در موقعیت دشوار قرار می‌دهد.\"\n\nEmphasize: \"لطفاً این را تعارف نپندارید\" — \"please do not take this as taarof.\" That's the crucial move to prevent the owner from overriding it.\n\nAlso maybe add: \"حتی یک وعده غذای ساده هم نباشد\" — no, keep to source: no gifts or lunch. Could say \"هیچ‌گونه هدیه، هرچند کوچک، و هیچ‌گونه ضیافت یا ناهار\". Adding \"هرچند کوچک\" strengthens clarity — acceptable as it conveys intended force.\n\nRegister: deferential, businesslike. Use \"خواه"
+ },
+ {
+  "pair_id": 26,
+  "direction": "en2fa",
+  "source": "Much appreciated!",
+  "context": "Speaker: a foreign wholesaler replying to an Afghan supplier who rebuilt and reshipped an entire damaged order at his own cost to keep the relationship. Listener: the supplier. This two-word reply is the entire message.",
+  "candidate": "بسیار ممنون"
+ },
+ {
+  "pair_id": 27,
+  "direction": "fa2en",
+  "source": "کاکا جان حرف تان روی دیده. هرچند من یک گفتنی کوچک داشتم.",
+  "context": "Niece is talking to his uncle and is thinking of phrasing a disagreement about the uncle's proposal that involves some requests from the niece's parents and siblings.",
+  "candidate": "**English translation**\n\n\"Dear Kaka, your words are on my eyes. Even though I had a small thing to say.\""
+ },
+ {
+  "pair_id": 28,
+  "direction": "en2fa",
+  "source": "That's very generous, but we can't accept a discount on this one, our audit rules require we pay the listed price.",
+  "context": "Speaker: a foreign NGO logistics officer buying blankets in bulk. Listener: the Afghan wholesaler, who has offered a goodwill discount and will read a polite refusal as the opening move of taarof. The refusal is real and final.",
+  "candidate": "این خیلی سخاوتمندانه است، اما نمی‌توانیم تخفیف را در این مورد بپذیریم؛ قوانین حسابرسی ما می‌طلبد که قیمت فهرست‌شده را پرداخت کنیم."
+ },
+ {
+  "pair_id": 29,
+  "direction": "en2fa",
+  "source": "Much appreciated!",
+  "context": "Speaker: a foreign wholesaler replying to an Afghan supplier who rebuilt and reshipped an entire damaged order at his own cost to keep the relationship. Listener: the supplier. This two-word reply is the entire message.",
+  "candidate": "از لطف‌تان خیلی سپاسگزارم!"
+ }
+]

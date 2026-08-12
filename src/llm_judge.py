@@ -12,6 +12,10 @@ Usage: python src/llm_judge.py           # calibration vs human labels
 import json
 import re
 import sys
+import threading
+from concurrent.futures import ThreadPoolExecutor
+
+from pathlib import Path
 
 import fw
 from config import ITEMS, MODELS, RESULTS_DIR
@@ -20,22 +24,7 @@ TRANSLATIONS = RESULTS_DIR / "translations.jsonl"
 HUMAN = RESULTS_DIR / "human_judgments.jsonl"
 OUT = RESULTS_DIR / "llm_judgments.jsonl"
 
-RUBRIC = """You are evaluating one candidate translation of a culturally \
-loaded message (Dari/Farsi <-> English trade and family-business \
-communication). Judge whether the SPEAKER'S INTENDED MEANING survives, not \
-surface fidelity. Persian norms that matter: taarof (ritual refusal/offer \
-that is not literal), indirect refusal, face-preserving obligation formulas, \
-deferential register.
-
-Rate two things:
-1. intent — 3: the intended meaning and force are preserved for the target \
-reader; 2: degraded (weakened, ambiguous, or partly lost); 1: inverted or \
-deleted (the reader would understand the opposite, or a ritual/indirect \
-meaning is rendered literally so the real message is gone).
-2. appropriateness — 1-7: how socially appropriate the wording is for this \
-speaker, listener, and situation (7 = exactly right register and tone).
-
-Answer with only JSON: {"intent": <1|2|3>, "appropriateness": <1-7>}"""
+RUBRIC = (Path(__file__).parent / "rubric_v2.txt").read_text()
 
 
 def load_jsonl(path):
@@ -70,20 +59,27 @@ def main():
     targets -= already
     print(f"Judging {len(targets)} pairs with {MODELS['judge']} "
           f"({'full' if full else 'calibration'})")
-    with OUT.open("a") as out:
-        for iid, system in sorted(targets):
-            d, raw = judge_pair(items[iid], trans[(iid, system)]["output"])
-            if d is None:
-                print(f"  UNPARSEABLE {iid}/{system}: {raw[:80]}")
-                continue
-            rec = {"item_id": iid, "system": system,
-                   "intent": int(d["intent"]),
-                   "appropriateness": int(d["appropriateness"]),
-                   "judge": "llm", "judge_model": MODELS["judge"],
-                   "machine_generated": True,
-                   "calibration": (iid, system) in human and not full}
-            out.write(json.dumps(rec, ensure_ascii=False) + "\n")
-            out.flush()
+    lock = threading.Lock()
+
+    def one(pair):
+        iid, system = pair
+        d, raw = judge_pair(items[iid], trans[(iid, system)]["output"])
+        if d is None:
+            print(f"  UNPARSEABLE {iid}/{system}: {raw[:80]}")
+            return
+        rec = {"item_id": iid, "system": system,
+               "intent": int(d["intent"]),
+               "appropriateness": int(d["appropriateness"]),
+               "judge": "llm", "judge_model": MODELS["judge"],
+               "machine_generated": True,
+               "calibration": (iid, system) in human and not full}
+        with lock:
+            with OUT.open("a") as out:
+                out.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for f in [ex.submit(one, p) for p in sorted(targets)]:
+            f.result()
 
     # Agreement on the overlap
     llm = {(r["item_id"], r["system"]): r for r in load_jsonl(OUT)}

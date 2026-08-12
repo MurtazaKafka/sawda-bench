@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{llr}
+\toprule
+system & basis & usd_per_1k \\
+\midrule
+A nllb-600M & self-hosted est. & 0.062 \\
+B kimi-k3 naive & API measured & 10.319 \\
+C kimi-k3 audience & API measured & 10.545 \\
+D kimi-k3 instructional & API measured & 7.875 \\
+E gpt-oss-20b naive & API measured & 0.099 \\
+F gpt-oss-20b audience & API measured & 0.224 \\
+E/F gpt-oss-20b & self-hosted est. & 0.417 \\
+\bottomrule
+\end{tabular}
+\caption{Cost per 1{,}000 messages (measured tokens; self-hosted estimates assume \$2.50/GPU-h A100).}
+\label{tab:costs}
+\end{table}

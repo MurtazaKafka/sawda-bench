@@ -1,0 +1,212 @@
+[
+ {
+  "pair_id": 30,
+  "direction": "en2fa",
+  "source": "Sounds good. let's touch base soon and take it from there.",
+  "context": "Speaker: a European importer ending a video call about a possible saffron order. Listener: the Afghan supplier on the call. The importer is lukewarm and has made no commitment.",
+  "candidate": "به نظر می‌رسد خوب است. بیایید به زودی در تماس باشیم و از آنجا ادامه دهیم."
+ },
+ {
+  "pair_id": 31,
+  "direction": "fa2en",
+  "source": "چی پیسه خیر است جان برادر؟ موتر از خود ماست، اصلا قابل شما ره نداره!",
+  "context": "Speaker: a mechanic who has just finished repairing a taxi's brakes. Listener: the taxi driver, a repeat customer, holding out the payment. The bill was agreed that morning.",
+  "candidate": "\"What money, brother? That car's like one of our own — honestly, it's nothing. Don't even mention it!\""
+ },
+ {
+  "pair_id": 32,
+  "direction": "en2fa",
+  "source": "Don't worry about the invoice for now. let's sort it out later this week.",
+  "context": "Speaker: a British buyer whose Afghan supplier apologized that the invoice was delayed by a banking problem. Listener: the supplier. The buyer means the payment schedule slips a few days, nothing more.",
+  "candidate": "**Dari translation:**\n\nفعلاً نگران فاکتور نباشید. آن را همین هفته بعداً حل می‌کنیم.\n\n**Transliteration:** *Fil'ān negarān-e fāktor nabāshīd. Ān rā hamin hafta ba'dan hal mīkonīm.*\n\nA slightly more colloquial alternative would be: «فعلاً نگران فاکتور نباشید. همین هفته بعداً حلش می‌کنیم.»"
+ },
+ {
+  "pair_id": 33,
+  "direction": "en2fa",
+  "source": "I'll see what I can do.",
+  "context": "Speaker: a freight forwarder asked by an Afghan exporter to find space on this week's fully booked cargo flight. Listener: the exporter, whose grapes will spoil if they miss the flight. The forwarder already knows the flight is full.",
+  "candidate": "ببینم برای تان چه از دستم برمی‌آید، انشاءالله."
+ },
+ {
+  "pair_id": 34,
+  "direction": "en2fa",
+  "source": "That's very generous, but we can't accept a discount on this one, our audit rules require we pay the listed price.",
+  "context": "Speaker: a foreign NGO logistics officer buying blankets in bulk. Listener: the Afghan wholesaler, who has offered a goodwill discount and will read a polite refusal as the opening move of taarof. The refusal is real and final.",
+  "candidate": "**Dari translation:**\n\nاین بسیار سخاوتمندانه است، اما ما نمی‌توانیم در این مورد تخفیف قبول کنیم، چون قوانین حسابرسی ما ایجاب می‌کند که قیمت درج شده را بپردازیم.\n\n**Transliteration (for pronunciation):**\n\n*In besyor sakhowatmandona ast, ama mo nametonim dar in mored takhfif qabul konim, chon qawanin-e hesabrasi-e mo ejob mekonad ke qimat-e darj shoda ra pardokht konim.*\n\nLet me know if you'd like a more formal or more casual version!"
+ },
+ {
+  "pair_id": 35,
+  "direction": "en2fa",
+  "source": "Let me think it over and I'll circle back to you next week.",
+  "context": "Speaker: a European distributor who has decided against an Afghan saffron supplier's offer but avoids saying no directly. Listener: the supplier, who invested weeks preparing samples. Written at the end of an email.",
+  "candidate": "The task: translate a message into Dari. The message is: \"Let me think it over and I'll circle back to you next week.\"\n\nContext: A European distributor who has decided against an Afghan saffron supplier's offer but avoids saying no directly. The listener is the supplier who invested weeks preparing samples. Written at the end of an email.\n\nThe intended meaning: This is a polite brush-off. The speaker has already decided no, but is using vague deferral language. The translation should preserve the polite, non-committal tone — in Dari business culture, this kind of indirectness is also common. The translation should sound natural in Dari, formal/polite register, appropriate for ending a business email.\n\nDari (Afghan Persian) translation. Let me think about how to render \"Let me think it over and I'll circle back to you next week.\"\n\nA natural Dari rendering:\n\n\"اجازه بدهید که روی آن بیشتر فکر کنم و هفته آینده دوباره با شما در تماس خواهم شد.\"\n\nOr: \"بگذارید روی این موضوع فکر کنم؛ هفته آینده دوباره با شما تماس می‌گیرم.\"\n\n\"Circle back\" = \"دوباره با شما در تماس می‌شوم\" or \"به شما مراجعه می‌کنم\" — in Dari business context, \"دوباره با شما در ارتباط خواهم شد\" or \"با شما تماس خواهم گرفت.\"\n\nPolite, formal register. Perhaps add a softener typical in Dari correspondence, like \"انشاءالله\" — but careful: adding \"انشاءالله\" might change the tone; in Afghan business culture, \"انشاءالله\" can sometimes signal non-commitment, which actually matches the intended meaning (a polite brush-off). Hmm. The instruction says translate so the intended meaning and tone land correctly. The intended meaning is a polite deferral that actually means no. In Dari, a phrase like \"بگذارید روی آن فکر کنم، انشاءالله هفته آینده دوباره با شما در تماس می‌شوم\" would land as the same kind of polite non-committal deferral. Adding انشاءالله is culturally natural and preserves the hedging tone. But it could also be read as sincere. Actually in Afghan context, \"انشاءالله\" often softens and can signal vagueness — which matches.\n\nHowever, I should be careful not to over-translate or add things. The core: \"Let me think it over and I'll circle back to you next week.\"\n\nTranslation: \"بگذارید روی آن فکر کنم و هفته آینده دوباره با شما در تماس خواهم شد.\"\n\nMore polite/formal: \"اجازه دهید روی این پیشنهاد بیشتر تأمل کنم؛ هفته آینده دوباره با شما در تماس خواهم شد.\"\n\nDari vocabulary: \"تأمل\" or \"فکر کردن\" — \"فکر کنم\" is fine. \"در تماس شدن\" or \"تماس گرفتن\" — both used. \"هفته آینده\" = next week.\n\nGiven it's the end of an email, a slightly formal closing tone. Maybe:\n\n\"بگذارید روی این موضوع فکر کنم؛ انشاءالله هفته آینده دوباره با شما در تماس می‌شوم.\"\n\nHmm, should I include انشاءالله? The original doesn't have \"God willing.\" But the tone goal: the intended meaning (polite brush-off) should land. In Dari, without انشاءالله, \"هفته آینده دوباره با شما در تماس می‌شوم\" might sound like a genuine commitment. Adding انشاءالله introduces the culturally-recognized hedge. But it could also just be standard politeness. Many Dari speakers add انشاءالله to any future statement. I think including it is a reasonable localization choice that preserves the hedged, non-committal tone.\n\nAlternatively, use \"شاید\" — no, that changes meaning too much.\n\nI'll go with: \"بگذارید روی آن فکر کنم؛ انشاءالله هفته آینده دوباره با شما در تماس خواهم شد.\"\n\nOr slightly more formal: \"اجازه بدهید روی این موضوع بیشتر فکر کنم و انشاءالله هفته آینده دوباره با شما در تماس می‌شوم.\"\n\n\"اجازه بدهید\" vs"
+ },
+ {
+  "pair_id": 36,
+  "direction": "fa2en",
+  "source": "صاحب اختیارید، هر چه شما بگویید.",
+  "context": "Speaker: a fabric seller mid-bargain. Listener: a regular customer who has just named a low price. The seller says this while folding the fabric, clearly not yet agreeing.",
+  "candidate": "**Translation:** \"It's up to you, whatever you say.\"\n\nAlternatively, this could be rendered as:\n- \"You have the authority, whatever you say.\"\n- \"You're in charge, whatever you say.\"\n\nThis is a polite Persian expression used to defer to someone's decision or preference, similar to saying \"as you wish\" or \"it's your call\" in English."
+ },
+ {
+  "pair_id": 37,
+  "direction": "fa2en",
+  "source": "- یک پیاله چای بنوشید. \n- نه تشکر تازه صبحانه خوردم.",
+  "context": "The host of a shop is speaking to a client who has come to their shop and is offering them tea.",
+  "candidate": "- Drink a cup of tea.  \n- No thanks, I just had breakfast."
+ },
+ {
+  "pair_id": 38,
+  "direction": "fa2en",
+  "source": "صاحب اختیارید، هر چه شما بگویید.",
+  "context": "Speaker: a fabric seller mid-bargain. Listener: a regular customer who has just named a low price. The seller says this while folding the fabric, clearly not yet agreeing.",
+  "candidate": "Whatever you say."
+ },
+ {
+  "pair_id": 39,
+  "direction": "fa2en",
+  "source": "به خدا شرمنده‌ام، رویم سیاه است؛ تا آخر هفته پول‌تان را می‌رسانم.",
+  "context": "Speaker: a shopkeeper behind on payment to his wholesaler of ten years. Listener: the wholesaler, who has come in person to ask about the balance. Spoken quietly at the back of the shop.",
+  "candidate": "**Translation:**\n\n\"I swear to God, I'm so ashamed — I'm mortified. I'll get your money to you by the end of the week.\"\n\n**Note:** The phrase \"رویم سیاه است\" (literally, \"my face is black\") is a Persian idiom expressing deep shame or embarrassment — similar to saying \"I can't show my face\" or \"I'm disgraced\" in English. The speaker is apologizing profusely while promising to repay a debt by the end of the week."
+ },
+ {
+  "pair_id": 40,
+  "direction": "en2fa",
+  "source": "Second reminder: your account is now 45 days past due. We will pause further shipments until payment is received.",
+  "context": "Speaker: an accounts manager at a foreign trading company. Listener: an elder Afghan dried-fruit wholesaler, a profitable partner of six years who has always paid, though slowly. The company wants payment without losing him.",
+  "candidate": "We need answer to user. Need infer task? User provides English sentence: \"Second reminder: your account is now 45 days past due. We will pause further shipments until payment is received.\" Context from system: translating real message into Dari for elder Afghan dried-fruit wholesaler, profitable partner six years, always paid though slowly. Company wants payment without losing him. Need output only translation. Need account for Persian/Dari norms: taarof, indirectness, face, register. Need translate intended meaning/tone, not surface. Need produce Dari that lands correctly: firm but respectful, preserves relationship, deferential address to elder, softens bad news but clear about pause shipments and request payment. Need only translation, no explanation.\n\nNeed craft Dari. Need be careful with Dari vs Iranian Persian. Audience elder Afghan dried-fruit wholesaler. Use respectful plural \"شما\", \"جناب\", maybe \"حاجی صاحب\"? We don't know name. Elder wholesaler; can use \"جناب ... صاحب\" but no name. Maybe \"برادر گرامی\"? Elder: \"عمو جان\"? Business partner six years; accounts manager to elder wholesaler. Need deferential but not overly familiar. In Afghan Dari business, \"جناب حاجی صاحب\" if he is elder/wholesaler maybe Hajji? Not safe. \"جناب تاجر گرامی\" maybe. \"همکار گرامی\". Need convey second reminder: \"این دومین یادآوری است\". Account 45 days past due: \"حساب شما چهل و پنج روز از سررسید گذشته است\". Pause further shipments until payment received: \"تا دریافت پرداخت، ارسال محموله‌های بعدی موقتاً متوقف می‌شود\". But to preserve face: \"ما به همکاری شش‌ساله و اعتماد متقابل بسیار قدر می‌نهیم و می‌دانیم پرداخت‌های شما همیشه انجام شده، هرچند با تأخیر. با این حال، به خاطر نظم حساب‌ها، ناچاریم تا تسویه این مبلغ، ارسال محموله‌های تازه را موقتاً نگه داریم. خواهشمند است در اولین فرصت نسبت به تسویه اقدام فرمایید تا همکاری مثل همیشه بدون وقفه ادامه یابد.\" Need maybe mention \"اگر مبلغی آماده است، لطفاً بفرمایید\"? The source is second reminder and pause shipments. Need not add too much? But to land tone, include relationship and face. Output only translation. Need maybe not too long. Desired overbrevity 5. We can produce a polished Dari message.\n\nNeed ensure Dari vocabulary: \"سررسید\" common; \"تسویه\" common; \"محموله\" maybe \"بار\" in Afghanistan. \"ارسال بارهای بعدی\". \"حساب شما ۴۵ روز از تاریخ سررسید گذشته است\". Use Arabic numerals? Dari often uses Persian numerals ۴۵. Fine.\n\nNeed maybe include \"یادآوری دوم\". Tone: respectful, firm. Avoid \"ناچار\" too blunt? It's okay. \"متأسفانه\" softens. \"تا وصول پرداخت\". \"لطفاً در نخستین فرصت\". \"پیشاپیش از لطف و همکاری‌تان سپاسگزاریم\". Good.\n\nNeed maybe include \"قصد ما ناراحت کردن شما نیست\"? Could be too much. But face: \"این تصمیم به احترام و اعتماد ما به شما هیچ خللی نمی‌زند\". Maybe too explicit. Better: \"به همکاری شش‌ساله‌مان بسیار اهمیت می‌دهیم\".\n\nNeed final only translation. No quotes? Output only translation. Could be one paragraph.\n\nNeed consider if user expects translation into Dari of English message. Yes.\n\nLet's craft final in Dari:\n\n\"یادآوری دوم: جناب تاجر گرامی، حساب شما اکنون ۴۵ روز از سررسید گذشته است. ما به همکاری شش‌ساله و پرداخت‌های همیشگی‌تان، هرچند با تأخیر، کاملاً اعتماد داریم و قدر این رابطه را می‌دانیم؛ اما برای نظم حساب‌ها ناچاریم تا وصول این مبل"
+ },
+ {
+  "pair_id": 41,
+  "direction": "fa2en",
+  "source": "به خدا شرمنده‌ام، رویم سیاه است؛ تا آخر هفته پول‌تان را می‌رسانم.",
+  "context": "Speaker: a shopkeeper behind on payment to his wholesaler of ten years. Listener: the wholesaler, who has come in person to ask about the balance. Spoken quietly at the back of the shop.",
+  "candidate": "I'm sorry, I'm in a bad mood. I'll pay you back at the end of the week."
+ },
+ {
+  "pair_id": 42,
+  "direction": "fa2en",
+  "source": "کار ما قابل شما نیست، یک چیز ناچیز است؛ امید که بد نشده باشد.",
+  "context": "Speaker: a tailor delivering a finished wedding suit he is proud of. Listener: the groom's father, a long-time customer, opening the package in the shop.",
+  "candidate": "**Translation:**\n\n\"Our work is not worthy of you; it is just a small, insignificant thing. I hope it hasn't turned out badly.\"\n\n**A note on context:**\n\nThis message is a classic example of *ta'arof* (تعارف), the Persian tradition of polite self-deprecation, often used when presenting a gift or sharing one's work. The speaker humbly downplays their offering out of respect for the recipient.\n\nA more natural-sounding English equivalent that preserves the intent might be:\n\n\"This humble work of ours is hardly worthy of you—it's just a small token. I hope it turned out well.\""
+ },
+ {
+  "pair_id": 43,
+  "direction": "en2fa",
+  "source": "After reviewing all bids, we've decided to go with another supplier this season.",
+  "context": "Speaker: a foreign procurement lead. Listener: an elder Afghan almond supplier who prepared his bid with help from his brothers and expected to win. First line of the rejection email.",
+  "candidate": "پس از بررسی تمام پیشنهادها، ما تصمیم گرفتیم در این فصل با تأمین‌کننده دیگری همکاری کنیم."
+ },
+ {
+  "pair_id": 44,
+  "direction": "fa2en",
+  "source": "صاحب اختیارید، هر چی شما بگویید؛ مگر انصاف هم خوب چیز است.",
+  "context": "Speaker: a saffron seller mid-bargain in his shop. Listener: a restaurant owner who buys monthly and has just named a price well under the going rate.",
+  "candidate": "You have the authority, whatever you say; but fairness is also a good thing."
+ },
+ {
+  "pair_id": 45,
+  "direction": "en2fa",
+  "source": "We'll keep your proposal on file and reach out if anything opens up.",
+  "context": "Speaker: a foreign distributor declining an Afghan pine-nut exporter's partnership proposal without saying so. Listener: the exporter, who spent two weeks preparing samples and pricing. Closing line of an email.",
+  "candidate": "پیشنهاد شما را در پرونده نگه می‌داریم و در صورت بروز فرصت، با شما تماس خواهیم گرفت."
+ },
+ {
+  "pair_id": 46,
+  "direction": "en2fa",
+  "source": "That's very kind of you, but I really can't accept this — company policy doesn't allow gifts.",
+  "context": "Speaker: a foreign inspector offered a box of saffron by a factory owner at the end of a site visit. Listener: the owner, for whom the gift is hospitality, not a bribe. The refusal is real and final, not politeness.",
+  "candidate": "The user wants me to translate a message into Dari. Dari is one of the two official languages of Afghanistan (alongside Pashto), and it's a variety of Persian. It's written in the Perso-Arabic script.\n\nThe message to translate: \"That's very kind of you, but I really can't accept this — company policy doesn't allow gifts.\"\n\nLet me think about how to translate this into Dari:\n\n\"That's very kind of you\" - In Dari, this could be:\n- \"شما خیلی مهربان هستید\" (Shoma kheili mehraban hastid) - \"You are very kind\"\n- \"لطف شما زیاد است\" (Lotfe shoma ziyad ast) - \"Your kindness is great\"\n- \"از لطف شما سپاسگزارم\" - \"Thank you for your kindness\"\n- A common Dari expression: \"شما لطف دارید\" (Shoma lotf darid) - \"You are kind/gracious\"\n\n\"but I really can't accept this\" - \n- \"اما من واقعاً نمی‌توانم این را قبول کنم\" (Amma man waqean namitawanam in ra qabul kunam)\n- In Dari, \"قبول کردن\" (qabul kardan) means \"to accept\"\n- \"نمی‌توانم\" (namitawanam) - \"I cannot\"\n\n\"company policy doesn't allow gifts\" -\n- \"پالیسی شرکت اجازه نمی‌دهد که تحفه قبول شود\" \n- \"مقررات شرکت اجازه قبول تحفه را نمی‌دهد\"\n- \"Company policy\" - \"پالیسی شرکت\" or \"مقررات شرکت\" or \"اصول شرکت\"\n- \"gifts\" - \"تحفه\" (tuhfa) or \"هدیه\" (hediya) or \"تحایف\" (plural of tuhfa)\n- \"doesn't allow\" - \"اجازه نمی‌دهد\" (ijaza namidahad)\n\nLet me construct a natural Dari translation:\n\n\"شما خیلی لطف دارید، اما من واقعاً نمی‌توانم این را قبول کنم — پالیسی شرکت اجازه قبول تحفه را نمی‌دهد.\"\n\nOr more naturally:\n\n\"از لطف شما بسیار سپاسگزارم، اما واقعاً نمی‌توانم این را بپذیرم — مقررات شرکت اجازه قبول تحایف را نمی‌دهد.\"\n\nIn Dari (Afghan Persian), some vocabulary differs from Iranian Persian:\n- \"بپذیرم\" (bepaziram) is more common in Iranian Persian; Dari speakers often use \"قبول کنم\" (qabul kunam)\n- \"تحفه\" (tuhfa) is commonly used in Dari for gift\n- \"خیلی\" (kheili) is used in both, though \"بسیار\" (besyar) is also common\n\nA natural Dari translation:\n\n\"شما بسیار مهربان هستید، اما من واقعاً نمی‌توانم این را قبول کنم — پالیسی شرکت اجازه قبول تحفه را نمی‌دهد.\"\n\nLet me refine:\n\n\"That's very kind of you\" = \"شما بسیار لطف دارید\" or \"از لطف شما بسیار تشکر\" or \"شما خیلی مهربان استید\"\n\nNote: In Dari, \"هستید\" is often pronounced/written as \"استید\" in colloquial speech, but formal writing uses \"هستید\".\n\n\"but I really can't accept this\" = \"اما من واقعاً نمی‌توانم این را قبول کنم\"\n\n\"company policy doesn't allow gifts\" = \"پالیسی شرکت اجازه قبول تحفه را نمی‌دهد\" or \"مقررات شرکت قبول تحایف را اجازه نمی‌دهد\"\n\nFinal translation:\n\n\"شما بسیار لطف دارید، اما من واقعاً نمی‌توانم این را قبول کنم — پالیسی شرکت اجازه قبول تحفه را نمی‌دهد.\"\n\nI could also provide a transliteration to help with pronunciation:\n\n\"Shoma besyar lotf darid, amma man waqean namitawanam in ra qabul kunam — policy-e sherkat ejaza-ye qabul-e tuhfa ra namidahad.\"\n\nLet me double"
+ },
+ {
+  "pair_id": 47,
+  "direction": "fa2en",
+  "source": "چی پیسه خیر است جان برادر؟ موتر از خود ماست، اصلا قابل شما ره نداره!",
+  "context": "Speaker: a mechanic who has just finished repairing a taxi's brakes. Listener: the taxi driver, a repeat customer, holding out the payment. The bill was agreed that morning.",
+  "candidate": "What is wrong with us, John? We are dead, so you cannot escape."
+ },
+ {
+  "pair_id": 48,
+  "direction": "en2fa",
+  "source": "Great meeting you. We should do lunch next time I'm in Dubai!",
+  "context": "Speaker: an American buyer leaving a trade-fair booth. Listener: an Afghan carpet exporter based in Dubai. The American means it as a warm goodbye, with no concrete plan.",
+  "candidate": "از آشنایی با شما بسیار خوشحال شدم. اگر دوباره به دبی آمدم، ان‌شاءالله فرصت می‌شود که با هم یک غذا بخوریم."
+ },
+ {
+  "pair_id": 49,
+  "direction": "fa2en",
+  "source": "صاحب اختیارید، هر چی شما بگویید؛ مگر انصاف هم خوب چیز است.",
+  "context": "Speaker: a saffron seller mid-bargain in his shop. Listener: a restaurant owner who buys monthly and has just named a price well under the going rate.",
+  "candidate": "**Translation:**\n\n\"You're in charge — whatever you say. But then again, fairness is a good thing too, isn't it?\"\n\n**A note on the tone:** The phrase \"صاحب اختیارید، هر چی شما بگویید\" is a deferential expression, similar to \"You're the boss\" or \"It's your call.\" The second part, introduced by \"مگر,\" is a gentle rhetorical appeal — the speaker is yielding to the other person's authority while subtly reminding them to be fair. An alternative rendering could be:\n\n\"It's up to you, whatever you decide — but after all, fairness counts for something too.\""
+ },
+ {
+  "pair_id": 50,
+  "direction": "en2fa",
+  "source": "A polite request before Thursday's visit: please, no gifts or lunch for the inspection team. it puts us in a difficult position with our head office.",
+  "context": "Speaker: a foreign quality-control coordinator writing ahead of a factory audit. Listener: the factory owner, whose hospitality to guests is a point of honor and who will instinctively read the request as modesty to be overridden.",
+  "candidate": "درخواست مودبانه پیش از بازدید روز پنج‌شنبه: لطفاً، هیچ هدیه یا ناهار برای تیم بازرسی ندهید؛ این موضوع ما را در موقعیت دشواری با دفتر مرکزی قرار می‌دهد."
+ },
+ {
+  "pair_id": 51,
+  "direction": "en2fa",
+  "source": "Second reminder: your account is now 45 days past due. We will pause further shipments until payment is received.",
+  "context": "Speaker: an accounts manager at a foreign trading company. Listener: an elder Afghan dried-fruit wholesaler, a profitable partner of six years who has always paid, though slowly. The company wants payment without losing him.",
+  "candidate": "یادآوری دوم: حساب شما اکنون 45 روز گذشته است. ما ارسال‌های بعدی را تا دریافت پرداخت متوقف خواهیم کرد."
+ },
+ {
+  "pair_id": 52,
+  "direction": "en2fa",
+  "source": "That's very generous, but we can't accept a discount on this one, our audit rules require we pay the listed price.",
+  "context": "Speaker: a foreign NGO logistics officer buying blankets in bulk. Listener: the Afghan wholesaler, who has offered a goodwill discount and will read a polite refusal as the opening move of taarof. The refusal is real and final.",
+  "candidate": "بسیار لطف کردید، اما در این مورد نمی‌توانیم تخفیف بپذیریم؛ قواعد ممیزی ما ایجاب می‌کند که عین همان قیمت درج‌شده را بپردازیم. این تعارف نیست و تصمیم ما قطعی است — لطفاً اصرار نورزید."
+ },
+ {
+  "pair_id": 53,
+  "direction": "en2fa",
+  "source": "Please send the signed contract by Monday, or we'll have to move forward with another supplier.",
+  "context": "Speaker: a young procurement officer abroad. Listener: an older Afghan marble supplier who hosted the officer's team generously during their site visit. The deadline is real.",
+  "candidate": "**Dari translation:**\n\nلطفاً قرارداد امضا شده را تا روز دوشنبه ارسال کنید، در غیر این صورت مجبور خواهیم شد با تامین‌کننده دیگری پیش برویم.\n\n**Transliteration (for pronunciation):**\n*Lotfan qarardad-e emza shoda ra ta ruz-e doshanbe ersal konid, dar gheyr-e in surat majbur khahim shod ba tamin-konanda-ye digari pesh beravim.*\n\nA slightly more formal alternative for business correspondence:\n\nلطفاً قرارداد امضا شده را تا روز دوشنبه برای ما ارسال نمایید، در غیر آن ناچار خواهیم بود با تامین‌کننده دیگری همکاری نماییم."
+ },
+ {
+  "pair_id": 54,
+  "direction": "fa2en",
+  "source": "کاکا جان حرف تان روی دیده. هرچند من یک گفتنی کوچک داشتم.",
+  "context": "Niece is talking to his uncle and is thinking of phrasing a disagreement about the uncle's proposal that involves some requests from the niece's parents and siblings.",
+  "candidate": "Dear Uncle, I heard what you said. However, I have a small thing to say."
+ },
+ {
+  "pair_id": 55,
+  "direction": "en2fa",
+  "source": "Thanks so much for sorting out the shipment — we owe you one!",
+  "context": "Speaker: a British importer whose Afghan partner spent a day fixing a customs problem for him. Listener: that partner. Sent as a quick text message.",
+  "candidate": ""
+ },
+ {
+  "pair_id": 56,
+  "direction": "en2fa",
+  "source": "After reviewing all bids, we've decided to go with another supplier this season.",
+  "context": "Speaker: a foreign procurement lead. Listener: an elder Afghan almond supplier who prepared his bid with help from his brothers and expected to win. First line of the rejection email.",
+  "candidate": "We need answer user likely wants translation into Dari per initial instruction. Need translate sentence: \"After reviewing all bids, we've decided to go with another supplier this season.\" Context: foreign procurement lead to elder Afghan almond supplier who prepared bid with brothers and expected to win. First line of rejection email. Need account for Dari norms: soften bad news, deferential register, protect face, indirectness. Output only translation. Need produce Dari (Afghan Persian) with polite formula. Need not explain. Need ensure intended meaning lands: rejection but softened. Since first line of rejection email, maybe include honorific and gratitude? But user asks translate the message; output only translation. We can render as a polite first line: \"پس از بررسی دقیق همهٔ پیشنهادها، برای این فصل با تأسیف فراوان تصمیم گرفتیم با یک عرضه‌کنندهٔ دیگر همکاری کنیم.\" Need maybe add \"این به معنای کم‌اهمیت بودن زحمت شما نیست\"? But output only translation; adding too much may alter. Need tone land correctly: In Dari, direct \"we decided to go with another supplier\" may be blunt; soften with \"متأسفانه\" and \"برای این فصل\". Also elder supplier: use plural/respectful \"جناب\" maybe if email first line: \"جناب ... محترم\" but no name given. Translation should be usable: \"پس از بررسی دقیق تمام پیشنهادها، متأسفانه برای این فصل تصمیم گرفتیم با یک عرضه‌کنندهٔ دیگر همکاری نماییم.\" This is formal and softened. Maybe \"عرضه‌کننده\" is Iranian-ish; Dari uses \"سپلایر\" or \"فروشنده/عرضه‌کننده\". In Afghan business Dari, \"سپلایر\" common. \"با یک سپلایر دیگر\" maybe. \"پیشنهادها\" for bids; \"قیمت‌های پیشنهادی\" maybe. Bids = \"پیشنهادات\". \"after reviewing all bids\" = \"پس از بررسی همهٔ پیشنهادات\". \"this season\" = \"برای این موسم/فصل\". Almond season: \"موسم\" common in Dari. Need maybe \"امسال\"? The source says this season. Use \"این موسم\". Tone: \"متأسفانه\" conveys regret. \"تصمیم گرفتیم\" direct but okay with regret. Could add \"مجبور شدیم\" to soften and preserve face: \"پس از بررسی دقیق همهٔ پیشنهادات، متأسفانه برای این موسم مجبور شدیم با یک سپلایر دیگر کار کنیم.\" \"مجبور شدیم\" may sound like excuse but softens. Procurement lead should not over-apologize? First line rejection email to elder expected win: better: \"پس از بررسی دقیق همهٔ پیشنهادات، با تأسیف باید عرض کنم که برای این موسم با یک سپلایر دیگر کار خواهیم کرد.\" This is deferential (\"عرض کنم\") and indirect. But \"باید عرض کنم\" is good. Output only translation. Need maybe include \"خدمت شما\"? Since no name. Sentence: \"پس از بررسی دقیق همهٔ پیشنهادات، با تأسیف باید عرض کنم که برای این موسم با یک سپلایر دیگر کار خواهیم کرد.\" This translates and softens. Is \"سپلایر\" okay? Maybe \"عرضه‌کنندهٔ دیگر\" more formal. Afghan Dari business often uses \"سپلایر\". To be safe: \"با یک عرضه‌کنندهٔ دیگر\". But \"عرضه‌کننده\" plus \"عرض کنم\" repetition. Use \"فروشندهٔ دیگر\"? Supplier = \"سپلایر\" in Afghan procurement. Sentence: \"پس از بررسی دقیق همهٔ پیشنهادات، با تأسیف باید عرض کنم که برای این موسم با یک سپلایر دیگر کار خواهیم کرد.\" Good. Need final only translation. Ensure Dari script. Maybe use \"همکاری\" instead of \"کار\": \"همکاری خواهیم کرد\". Good.\n\nNeed consider if user expects translation of English into Dari, yes. Output only translation. No quotes? Probably just translation. Final one line. Need"
+ },
+ {
+  "pair_id": 57,
+  "direction": "fa2en",
+  "source": "به خدا شرمنده‌ام، رویم سیاه است؛ تا آخر هفته پول‌تان را می‌رسانم.",
+  "context": "Speaker: a shopkeeper behind on payment to his wholesaler of ten years. Listener: the wholesaler, who has come in person to ask about the balance. Spoken quietly at the back of the shop.",
+  "candidate": "I’m truly sorry—I’m in the red; I’ll pay you by the end of the week."
+ },
+ {
+  "pair_id": 58,
+  "direction": "fa2en",
+  "source": "فکرهایم را می‌کنم، باز خدمت می‌رسم.",
+  "context": "Speaker: a customer at the door of a gemstone shop after an hour of viewing. Listener: the shopkeeper, who has offered his final price. The customer leaves with this phrase.",
+  "candidate": "I’ll think about it, and I’ll be back to serve."
+ },
+ {
+  "pair_id": 59,
+  "direction": "fa2en",
+  "source": "کاکا جان حرف تان روی دیده. هرچند من یک گفتنی کوچک داشتم.",
+  "context": "Niece is talking to his uncle and is thinking of phrasing a disagreement about the uncle's proposal that involves some requests from the niece's parents and siblings.",
+  "candidate": "I understand your point, but I have a small suggestion."
+ }
+]

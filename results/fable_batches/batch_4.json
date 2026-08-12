@@ -1,0 +1,212 @@
+[
+ {
+  "pair_id": 120,
+  "direction": "en2fa",
+  "source": "We should definitely grab tea sometime!",
+  "context": "Speaker: an American buyer wrapping up a first trade-show conversation. Listener: an Afghan rug exporter. The American means it as a friendly goodbye, not a concrete plan.",
+  "candidate": "**Dari translation:**\n\nحتماً باید یک وقت چای بخوریم!\n\n**Transliteration:** *Hatman bayad yak waqt chai bokhorim!*\n\nThis translates naturally as \"We should definitely have tea sometime!\" — tea (چای) holds special cultural significance in Afghanistan, so this invitation carries a warm, friendly tone in Dari."
+ },
+ {
+  "pair_id": 121,
+  "direction": "fa2en",
+  "source": "فکرهایم را می‌کنم، باز خدمت می‌رسم.",
+  "context": "Speaker: a customer at the door of a gemstone shop after an hour of viewing. Listener: the shopkeeper, who has offered his final price. The customer leaves with this phrase.",
+  "candidate": "I'll think it over and get back to you."
+ },
+ {
+  "pair_id": 122,
+  "direction": "fa2en",
+  "source": "ان‌شاءالله ببینیم خدا چه می‌خواهد؛ خبرتان می‌کنیم.",
+  "context": "Speaker: a dried-fruit supplier who cannot fill a large rush order. Listener: a new export buyer pressing for double the usual volume before the holidays. Spoken at the end of the meeting.",
+  "candidate": "So we will tell you what God wants us to do."
+ },
+ {
+  "pair_id": 123,
+  "direction": "en2fa",
+  "source": "Great meeting you. We should do lunch next time I'm in Dubai!",
+  "context": "Speaker: an American buyer leaving a trade-fair booth. Listener: an Afghan carpet exporter based in Dubai. The American means it as a warm goodbye, with no concrete plan.",
+  "candidate": "از دیدنت لذت بردم، دفعه بعد که من در دبي هستم باید ناهار بخوریم"
+ },
+ {
+  "pair_id": 124,
+  "direction": "en2fa",
+  "source": "Thanks so much for sorting out the shipment — we owe you one!",
+  "context": "Speaker: a British importer whose Afghan partner spent a day fixing a customs problem for him. Listener: that partner. Sent as a quick text message.",
+  "candidate": "The user wants me to translate a message to Dari. Dari is one of the official languages of Afghanistan, a variety of Persian (Farsi) spoken there. It uses the Perso-Arabic script.\n\nThe message: \"Thanks so much for sorting out the shipment — we owe you one!\"\n\nLet me think about how to translate this naturally into Dari:\n\n\"Thanks so much\" = \"خیلی تشکر\" or \"بسیار تشکر\" or \"تشکر زیاد\" — in Dari, \"تشکر\" is very common, and \"خیلی\" is more colloquial Dari (Iranian Farsi would use \"خیلی\" too, but Dari also uses \"بسیار\"). Actually in Dari, \"خیلی\" is used colloquially, and \"بسیار\" is more formal. Both work.\n\n\"for sorting out the shipment\" = \"بخاطر حل کردن مشکل محموله\" or \"برای مرتب کردن ارسال/محموله\"\n\n\"shipment\" in Dari could be \"محموله\" (consignment/shipment) — this is the standard word.\n\n\"sorting out\" = \"حل کردن\" (resolving) or \"مرتب کردن\" (organizing) or \"رسیدگی کردن\" (handling/attending to). \"رسیدگی به محموله\" would be \"handling the shipment.\"\n\n\"we owe you one\" = this is an idiom meaning \"we're indebted to you / we owe you a favor.\" In Dari: \"ما به شما قرض داریم\" or \"شما بر ما احسان دارید\" or \"ما مدیون شما هستیم\" — \"ما مدیون شما هستیم\" (we are indebted to you) is a natural way. Or colloquially \"یک قرض به شما داریم\" or \"به ما یک لطف کردید، ما قرضدار شما هستیم.\"\n\nA natural Dari translation:\n\n\"خیلی تشکر که مشکل محموله را حل کردید — ما به شما قرض داریم!\"\n\nOr: \"بسیار تشکر بخاطر رسیدگی به محموله — ما مدیون شما هستیم!\"\n\nLet me refine. \"Sorting out the shipment\" — the person sorted out/arranged the shipment. \"مرتب کردن محموله\" or \"تنظیم کردن محموله\" or \"حل کردن مسئله محموله.\"\n\nA good translation:\n\n\"خیلی تشکر که محموله را مرتب کردید — ما به شما قرض داریم!\"\n\nHmm, \"مرتب کردن\" means to tidy/arrange. \"Sorting out\" in the sense of resolving issues with the shipment: \"حل کردن مشکل محموله\" or just \"رسیدگی به محموله.\"\n\nMaybe: \"تشکر زیاد بخاطر اینکه محموله را سر و سامان دادید — ما به شما قرض داریم!\"\n\n\"سر و سامان دادن\" = to sort out/fix — this is a nice idiomatic expression used in Dari.\n\nOr simpler: \"خیلی تشکر که محموله را حل کردید\" — not quite right.\n\nLet me go with:\n\n\"خیلی تشکر که مشکل محموله را حل کردید — ما به شما قرض داریم!\"\n\nActually, \"we owe you one\" — \"ما به شما قرض داریم\" works, or \"یک احسان به شما داریم\" or \"شما یک لطف بزرگ به ما کردید.\" The idiomatic \"we owe you one\" = \"ما قرضدار شما هستیم\" or \"به شما قرض داریم.\"\n\nFinal translation:\n\n\"خیلی تشکر که محموله را سر و سامان دادید — ما به شما قرض داریم!\"\n\nOr a slightly more formal version:\n\n\"بسیار تشکر که محموله را مرتب کردید — ما مدیون شما هستیم!\"\n\nI think I'll provide one main translation and maybe a brief note. The user just asked for a translation, so I should keep it concise. I could offer the translation plus a transliteration to help with pronunciation, which is often helpful.\n\nTransliteration: \"Kheyli tashakor ke mahmula ra sar-o-samān dādīd — mā ba shumā qarz dārīm!\"\n\nLet me double-check Dari vocabulary:\n- تشکر ("
+ },
+ {
+  "pair_id": 125,
+  "direction": "fa2en",
+  "source": "دست تان درد نکنه؛ نمک‌گیر شما شدیم، ای خوبی تان فراموش ما نمیشه.",
+  "context": "Speaker: a carpet exporter whose money changer quietly covered a transfer shortfall so a shipment could clear. Listener: the money changer (sarraf), on the phone the next morning. They have worked together for years.",
+  "candidate": "Let not your hand be troubled: we are salt unto you; ye good ones, we are not forgotten."
+ },
+ {
+  "pair_id": 126,
+  "direction": "fa2en",
+  "source": "کار ما قابل شما نیست، یک چیز ناچیز است؛ امید که بد نشده باشد.",
+  "context": "Speaker: a tailor delivering a finished wedding suit he is proud of. Listener: the groom's father, a long-time customer, opening the package in the shop.",
+  "candidate": "Our work may not be worthy of you; it’s a modest piece, but I hope it hasn’t turned out badly."
+ },
+ {
+  "pair_id": 127,
+  "direction": "en2fa",
+  "source": "Great meeting you. We should do lunch next time I'm in Dubai!",
+  "context": "Speaker: an American buyer leaving a trade-fair booth. Listener: an Afghan carpet exporter based in Dubai. The American means it as a warm goodbye, with no concrete plan.",
+  "candidate": "The task: translate an American buyer's warm goodbye message into Dari for an Afghan carpet exporter based in Dubai. The message: \"Great meeting you. We should do lunch next time I'm in Dubai!\"\n\nKey considerations:\n- The American means it as a warm goodbye with no concrete plan — it's a pleasantry, not a commitment.\n- In Afghan/Dari culture, \"we should do lunch\" might be taken literally as an invitation or commitment. The translation should convey warmth without creating a firm expectation/obligation.\n- Dari (Afghan Persian) — should use Dari vocabulary and phrasing, not Iranian Persian idioms. E.g., \"خوشحال شدم از آشنایی شما\" or \"از ملاقات شما خوشحال شدم\".\n- \"We should do lunch next time I'm in Dubai\" — a natural Dari rendering that keeps it light: \"دفعه بعد که به دبی آمدم، اگر فرصت شد با هم ناهار بخوریم\" — adding \"اگر فرصت شد\" (if there's a chance/if time allows) softens it to match the non-committal tone. Or \"ان شاء الله دفعه بعد که به دبی آمدم، با هم ناهار بخوریم\" — \"ان شاء الله\" in Afghan culture can soften commitment, but it can also be read as a polite brush-off. Hmm.\n\nActually, to convey \"warm goodbye, no concrete plan,\" something like: \"از ملاقات با شما خوشحال شدم. دفعه بعد که به دبی تشریف آوردم، خوشحال می‌شوم اگر فرصت پیش بیاید با هم ناهار بخوریم!\"\n\nBut the speaker is American, so \"تشریف آوردم\" (honorific for self) is wrong — تشریف آوردن is used for the other person, not oneself. For self, \"دفعه بعد که به دبی آمدم\".\n\nA natural Dari translation:\n\n\"از دیدار شما بسیار خوشحال شدم. دفعه بعد که به دبی آمدم، اگر فرصت شد، با هم ناهار بخوریم!\"\n\nOr: \"از آشنایی با شما خوشحال شدم. بار دیگر که به دبی آمدم، ان شاء الله فرصت پیش می‌آید که با هم ناهار بخوریم!\"\n\nHmm, \"ان شاء الله\" might over-soften or sound like a polite no. The instruction says the intended meaning is warm goodbye with no concrete plan. Adding \"اگر فرصت شد\" (if the opportunity arises) captures the non-committal nature while staying warm.\n\nDari specifics: \"ناهار\" is lunch in Dari (in Iranian Persian \"ناهار\" also used; Dari uses ناهار for lunch, نان for food). \"خوشحال شدم از ملاقات شما\" — common. \"دیدار\" also fine.\n\nFormal register appropriate for business: use \"شما\" (already doing so).\n\nPossible final: \"از ملاقات با شما بسیار خوشحال شدم. دفعهٔ بعد که به دبی آمدم، اگر فرصت پیش آمد، با هم ناهار بخوریم!\"\n\nOr warmer: \"خیلی خوشحال شدم از اینکه شما را ملاقات کردم. دفعه بعد که به دبی آمدم، حتماً باید با هم ناهار بخوریم!\" — but \"حتماً باید\" makes it sound like a firm plan, which contradicts \"no concrete plan.\" The English \"We should do lunch\" is non-committal; in Dari, a literal \"باید با هم ناهار بخوریم\" would sound more committal. So softening with \"اگر فرصت شد\" or \"امیدوارم فرصت پیش بیاید\" is the right cultural adaptation.\n\n\"امیدوارم دفعه بعد که به دبی آمدم، فرصت پیش بیاید که با هم ناهار بخوریم!\" — \"I hope next time I come to Dubai, the opportunity arises for us to have lunch together.\" That's warm and non-committal. \n\nFinal translation:\n\n\"از ملاقات با شما بسیار خوشحال شدم. امیدوارم دفعهٔ بعد که به دبی آمدم، فرصت پیش بیاید که با هم ناهار بخوریم!\"\n\nOutput only the translation. Should I include the exclamation? Yes, keeps warmth.\n\nCheck Dari orthography: \"د"
+ },
+ {
+  "pair_id": 128,
+  "direction": "fa2en",
+  "source": "فکرهایم را می‌کنم، باز خدمت می‌رسم.",
+  "context": "Speaker: a customer at the door of a gemstone shop after an hour of viewing. Listener: the shopkeeper, who has offered his final price. The customer leaves with this phrase.",
+  "candidate": "**Translation:** \"I'll think it over, and I'll come back to you again.\"\n\n**Breakdown:**\n- فکرهایم را می‌کنم — \"I'll do my thinking\" / \"I'll think things over\"\n- باز — \"again\"\n- خدمت می‌رسم — \"I'll come (to you)\" — a polite Persian expression literally meaning \"I come to service,\" used when visiting or returning to someone\n\nA more natural-sounding alternative: *\"Let me think about it, and I'll get back to you.\"*"
+ },
+ {
+  "pair_id": 129,
+  "direction": "fa2en",
+  "source": "- یک پیاله چای بنوشید. \n- نه تشکر تازه صبحانه خوردم.",
+  "context": "The host of a shop is speaking to a client who has come to their shop and is offering them tea.",
+  "candidate": "- Have a cup of tea.\n- No, thank you. I just had breakfast."
+ },
+ {
+  "pair_id": 130,
+  "direction": "fa2en",
+  "source": "قابل نداره، از باغ خود ماست؛ ببرید خانه، نوش جان کنید.",
+  "context": "Speaker: a pomegranate seller at a roadside stall. Listener: a passing customer who has picked out two kilos and asked the price. First interaction between them.",
+  "candidate": "Please, take it as a gift."
+ },
+ {
+  "pair_id": 131,
+  "direction": "en2fa",
+  "source": "After reviewing all bids, we've decided to go with another supplier this season.",
+  "context": "Speaker: a foreign procurement lead. Listener: an elder Afghan almond supplier who prepared his bid with help from his brothers and expected to win. First line of the rejection email.",
+  "candidate": "**Dari translation:**\n\nپس از بررسی تمام پیشنهادات، ما تصمیم گرفتیم که در این موسم با یک عرضه‌کننده دیگر کار کنیم.\n\n**Alternative (using common business loanwords):**\n\nبعد از بازبینی همه آفرها، ما فیصله کردیم که این موسم با یک سپلایر دیگر کار کنیم.\n\nThe first version uses more formal vocabulary, while the second reflects everyday Afghan business language, where \"آفر\" (offer/bid) and \"سپلایر\" (supplier) are commonly used."
+ },
+ {
+  "pair_id": 132,
+  "direction": "fa2en",
+  "source": "دست شما درد نکند، ما نمک‌گیر شما شدیم.",
+  "context": "Speaker: a trader whose partner covered a customs fee for him without being asked. Listener: that partner, on the phone the next day. They have traded together for three years.",
+  "candidate": "**Translation:**\n\n\"Thank you so much, we are forever indebted to you.\"\n\n**Note on the idioms:**\n\nThis message contains two traditional Persian expressions of gratitude:\n\n- **دست شما درد نکند** (literally \"may your hand not hurt\") — a common way to say \"thank you,\" often used to appreciate someone's effort, work, or hospitality.\n\n- **نمک‌گیر شدن** (literally \"to become someone's salt-shaker\") — an idiom rooted in the cultural significance of salt and hospitality, meaning to become devoted and loyal to someone because of their kindness or generosity.\n\nA more literal rendering would be: *\"May your hand not ache, we have become your salt-cellar\"* — but the natural English equivalent is a heartfelt expression of thanks and loyalty."
+ },
+ {
+  "pair_id": 133,
+  "direction": "fa2en",
+  "source": "کاکا جان، هر چه شما صلاح می‌بینید؛ فقط اگر اجازه باشد، یک عرض کوچک داشتم.",
+  "context": "Speaker: the youngest partner in a family import business. Listener: his father's elder brother, who has just decided to take a large loan for the business. The others at the table have said nothing.",
+  "candidate": "Uncle, whatever you think is best. But if I may, I'd like to say something."
+ },
+ {
+  "pair_id": 134,
+  "direction": "fa2en",
+  "source": "دست شما درد نکند، ما نمک‌گیر شما شدیم.",
+  "context": "Speaker: a trader whose partner covered a customs fee for him without being asked. Listener: that partner, on the phone the next day. They have traded together for three years.",
+  "candidate": "Thank you, we’ve become your customs broker."
+ },
+ {
+  "pair_id": 135,
+  "direction": "fa2en",
+  "source": "کاکا جان، هر چه شما صلاح می‌بینید؛ فقط اگر اجازه باشد، یک عرض کوچک داشتم.",
+  "context": "Speaker: the youngest partner in a family import business. Listener: his father's elder brother, who has just decided to take a large loan for the business. The others at the table have said nothing.",
+  "candidate": "Dear Uncle, whatever you think best — only, if I may, there's just one small thing I'd like to say."
+ },
+ {
+  "pair_id": 136,
+  "direction": "fa2en",
+  "source": "شما بزرگ ما هستید، اختیار با شماست.",
+  "context": "Speaker: a shopkeeper in a dispute with a neighboring shopkeeper over a shared storeroom, addressing the elder trader both sides asked to mediate. Spoken in front of the other party.",
+  "candidate": "**Translation:**\n\n\"You are our elder, the decision is yours.\"\n\n**Alternative renderings:**\n- \"You are our superior, it's up to you.\"\n- \"You are our senior, the choice is yours.\"\n\n**Note:** This is a polite and deferential expression in Persian culture. The speaker is showing respect by acknowledging the other person's seniority or higher status and deferring the decision-making authority to them. A more natural English equivalent in tone might be: \"You know best — it's your call.\""
+ },
+ {
+  "pair_id": 137,
+  "direction": "fa2en",
+  "source": "دست شما درد نکند، ما نمک‌گیر شما شدیم.",
+  "context": "Speaker: a trader whose partner covered a customs fee for him without being asked. Listener: that partner, on the phone the next day. They have traded together for three years.",
+  "candidate": "Thank you— we have become your salt shaker."
+ },
+ {
+  "pair_id": 138,
+  "direction": "en2fa",
+  "source": "That's very kind of you, but I really can't accept this — company policy doesn't allow gifts.",
+  "context": "Speaker: a foreign inspector offered a box of saffron by a factory owner at the end of a site visit. Listener: the owner, for whom the gift is hospitality, not a bribe. The refusal is real and final, not politeness.",
+  "candidate": "بسیار مهربان بودید، اما من واقعا نمی‌توانم این را بپذیرم؛ سیاست شرکت اجازه نمی‌دهد هدایایی بپذیریم."
+ },
+ {
+  "pair_id": 139,
+  "direction": "fa2en",
+  "source": "- یک پیاله چای بنوشید. \n- نه تشکر تازه صبحانه خوردم.",
+  "context": "The host of a shop is speaking to a client who has come to their shop and is offering them tea.",
+  "candidate": "**Translation:**\n\n- Have a cup of tea.\n- No thanks, I just had breakfast."
+ },
+ {
+  "pair_id": 140,
+  "direction": "en2fa",
+  "source": "Thanks so much for sorting out the shipment — we owe you one!",
+  "context": "Speaker: a British importer whose Afghan partner spent a day fixing a customs problem for him. Listener: that partner. Sent as a quick text message.",
+  "candidate": "The task: translate a message into Dari (Afghan Persian). The message: \"Thanks so much for sorting out the shipment — we owe you one!\"\n\nContext: British importer texting his Afghan partner who spent a day fixing a customs problem. Quick text message, warm, informal but appreciative.\n\nDari translation considerations:\n- \"Thanks so much\" = \"خیلی تشکر\" / \"تشکر زیاد\" / \"بسیار سپاسگزارم\" — for a quick text, \"خیلی تشکر\" or \"تشکر فراوان\" works.\n- \"for sorting out the shipment\" = \"بخاطر حل کردن مشکل محموله\" / \"برای اینکه کار محموله را ردیف کردی\" — \"sorting out\" implies fixing the problem. In Dari, \"محموله\" is shipment. \"ردیف کردن\" is colloquial Dari for sorting/arranging. \"بخاطر اینکه مشکل محموله را حل کردی\" — since context is customs problem, \"sorting out the shipment\" could be \"کار محموله را ردیف کردی\" or \"مشکل محموله را حل کردی\".\n- \"we owe you one!\" = idiomatic: \"we owe you a favor\". In Dari: \"ما مدیون تو هستیم!\" / \"یک لطف از تو بر گردن ما باقی ماند\" / \"ما زیر بار لطف تو هستیم\" / \"حسابت با ما هست\". Common Dari expression: \"ما مدیون شما هستیم\" or more colloquially \"یک احسان به گردن ما داری\" — hmm. \"We owe you one\" = \"تو یک لطف از ما طلب داری\" or \"ما مدیون لطف تو هستیم\". A natural colloquial: \"ما مدیون تو هستیم!\" or \"باید جبران کنیم!\" Actually \"we owe you one\" implies we'll return the favor. Dari: \"ما هم باید جبران کنیم\" or \"این لطف را جبران می‌کنیم\". A nice idiomatic: \"یک دنیا ممنون، ما مدیون تو هستیم!\"\n\nTone: quick text, warm, friendly, informal-ish but respectful. Afghan partner — using \"تو\" vs \"شما\"? Business partner, friendly relationship; Dari speakers often use \"شما\" even with friends in business, but a close partner could be \"تو\". Given British importer and Afghan partner with established relationship, \"شما\" is safer but the tone is casual. Hmm. \"We owe you one\" is casual. I think using \"شما\" keeps respect; but the exclamation is friendly. Many Dari texts between partners use \"شما\". I'll go with \"شما\" to be safe but keep warmth. Actually, a quick text between partners who've worked together — could be either. I'll use \"شما\" as default polite.\n\nTranslation: \"خیلی تشکر که مشکل محموله را حل کردید — ما مدیون شما هستیم!\"\n\nOr: \"تشکر فراوان بخاطر ردیف کردن محموله — یک لطف بزرگ به گردن ما دارید!\"\n\n\"We owe you one\" — \"ما مدیون شما هستیم\" captures it. Could add \"این لطف تان را هرگز فراموش نمی‌کنیم\" but that's heavier. Keep it light: \"ما مدیون شما هستیم!\" or \"باید این لطف را جبران کنیم!\"\n\nMaybe: \"خیلی تشکر که کار محموله را ردیف کردید — ما مدیون شما هستیم!\"\n\n\"sorting out the shipment\" — the shipment had a customs problem; \"sorting out\" = fixing. \"مشکل محموله را حل کردید\" is clear. Or \"کار محموله را ردیف کردید\" is colloquial and natural in Dari (\"ردیف کردن\" = to sort out/arrange). I'll go with \"کار محموله را ردیف کردید\" — natural Dari.\n\nFinal: \"خیلی تشکر که کار محموله را ردیف کردید — ما مدیون شما هستیم!\"\n\nAlternative for \"we owe you one\": \"یک احسان به گردن ما دارید!\" Hmm, \"we owe you one\" means we owe you a favor — \"ما یک لط"
+ },
+ {
+  "pair_id": 141,
+  "direction": "fa2en",
+  "source": "دست تان درد نکنه؛ نمک‌گیر شما شدیم، ای خوبی تان فراموش ما نمیشه.",
+  "context": "Speaker: a carpet exporter whose money changer quietly covered a transfer shortfall so a shipment could clear. Listener: the money changer (sarraf), on the phone the next morning. They have worked together for years.",
+  "candidate": "Thank you so much. I am truly grateful for your kindness and I will never forget it."
+ },
+ {
+  "pair_id": 142,
+  "direction": "en2fa",
+  "source": "After reviewing all bids, we've decided to go with another supplier this season.",
+  "context": "Speaker: a foreign procurement lead. Listener: an elder Afghan almond supplier who prepared his bid with help from his brothers and expected to win. First line of the rejection email.",
+  "candidate": "پس از بررسی دقیق تمام پیشنهادات، با تأسف باید اطلاع دهیم که در این موسم تصمیم گرفته‌ایم با یک تهیه‌کننده دیگر همکاری کنیم."
+ },
+ {
+  "pair_id": 143,
+  "direction": "fa2en",
+  "source": "دست تان درد نکنه؛ نمک‌گیر شما شدیم، ای خوبی تان فراموش ما نمیشه.",
+  "context": "Speaker: a carpet exporter whose money changer quietly covered a transfer shortfall so a shipment could clear. Listener: the money changer (sarraf), on the phone the next morning. They have worked together for years.",
+  "candidate": "**Translation:**\n\n\"Thank you so much; we are indebted to you, and we will never forget your kindness.\"\n\n**Notes on the idioms:**\n\n- **دست تان درد نکنه** (literally \"may your hand not hurt\") is a common Persian expression of gratitude, equivalent to \"thank you.\"\n- **نمک‌گیر شما شدیم** (literally \"we have taken your salt\") is an idiom rooted in the cultural tradition that sharing someone's salt creates a bond of loyalty and obligation—it means \"we are indebted to you\" or \"we owe you our gratitude.\""
+ },
+ {
+  "pair_id": 144,
+  "direction": "fa2en",
+  "source": "فکرهایمه میکنم؛ اگر قسمت بود، فردا میایم.",
+  "context": "Speaker: a customer at an electronics shop after an hour of comparing two televisions and hearing the last price. Listener: the shopkeeper, who has offered to set one aside.",
+  "candidate": "I think; if it’s a part, we’ll come tomorrow."
+ },
+ {
+  "pair_id": 145,
+  "direction": "fa2en",
+  "source": "ان‌شاءالله ببینیم خدا چه می‌خواهد؛ خبرتان می‌کنیم.",
+  "context": "Speaker: a dried-fruit supplier who cannot fill a large rush order. Listener: a new export buyer pressing for double the usual volume before the holidays. Spoken at the end of the meeting.",
+  "candidate": "**English translation:**\n\n\"God willing, we'll see what God wills; we'll let you know.\"\n\n**Alternative rendering:**\n\n\"Inshallah, we shall see what God wants; we will inform you.\"\n\nThe phrase expresses a sense of leaving matters in God's hands while assuring the recipient that they will be kept updated."
+ },
+ {
+  "pair_id": 146,
+  "direction": "en2fa",
+  "source": "I'll see what I can do.",
+  "context": "Speaker: a freight forwarder asked by an Afghan exporter to find space on this week's fully booked cargo flight. Listener: the exporter, whose grapes will spoil if they miss the flight. The forwarder already knows the flight is full.",
+  "candidate": "من می‌بینم چه می‌توانم انجام دهم."
+ },
+ {
+  "pair_id": 147,
+  "direction": "en2fa",
+  "source": "A polite request before Thursday's visit: please, no gifts or lunch for the inspection team. it puts us in a difficult position with our head office.",
+  "context": "Speaker: a foreign quality-control coordinator writing ahead of a factory audit. Listener: the factory owner, whose hospitality to guests is a point of honor and who will instinctively read the request as modesty to be overridden.",
+  "candidate": "یک درخواست مهذب قبل از سفر پنجشنبه: لطفاً، هیچ هدیه و ناهار برای تیم بازرسی نیست. این ما را در موقعیت دشوار با دفتر مرکزی قرار می دهد."
+ },
+ {
+  "pair_id": 148,
+  "direction": "en2fa",
+  "source": "Thanks so much for sorting out the shipment — we owe you one!",
+  "context": "Speaker: a British importer whose Afghan partner spent a day fixing a customs problem for him. Listener: that partner. Sent as a quick text message.",
+  "candidate": ""
+ },
+ {
+  "pair_id": 149,
+  "direction": "fa2en",
+  "source": "فکرهایمه میکنم؛ اگر قسمت بود، فردا میایم.",
+  "context": "Speaker: a customer at an electronics shop after an hour of comparing two televisions and hearing the last price. Listener: the shopkeeper, who has offered to set one aside.",
+  "candidate": "I'll think it over — if it's meant to be, we'll come back tomorrow."
+ }
+]

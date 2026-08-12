@@ -1,0 +1,212 @@
+[
+ {
+  "pair_id": 60,
+  "direction": "fa2en",
+  "source": "صاحب اختیارید، هر چه شما بگویید.",
+  "context": "Speaker: a fabric seller mid-bargain. Listener: a regular customer who has just named a low price. The seller says this while folding the fabric, clearly not yet agreeing.",
+  "candidate": "Well, you're the boss... whatever you say."
+ },
+ {
+  "pair_id": 61,
+  "direction": "en2fa",
+  "source": "We should definitely grab tea sometime!",
+  "context": "Speaker: an American buyer wrapping up a first trade-show conversation. Listener: an Afghan rug exporter. The American means it as a friendly goodbye, not a concrete plan.",
+  "candidate": "باید حتماً یه وقت چای بخوریم!"
+ },
+ {
+  "pair_id": 62,
+  "direction": "en2fa",
+  "source": "Sounds good. let's touch base soon and take it from there.",
+  "context": "Speaker: a European importer ending a video call about a possible saffron order. Listener: the Afghan supplier on the call. The importer is lukewarm and has made no commitment.",
+  "candidate": "خوب به نظر می رسد. بیایید به زودی به پایه دست بزنیم و از آنجا شروع کنیم."
+ },
+ {
+  "pair_id": 63,
+  "direction": "fa2en",
+  "source": "صاحب اختیارید، هر چی شما بگویید؛ مگر انصاف هم خوب چیز است.",
+  "context": "Speaker: a saffron seller mid-bargain in his shop. Listener: a restaurant owner who buys monthly and has just named a price well under the going rate.",
+  "candidate": "Whatever ye say, it is yours; but justice is good."
+ },
+ {
+  "pair_id": 64,
+  "direction": "fa2en",
+  "source": "شما بزرگ ما هستید، اختیار با شماست.",
+  "context": "Speaker: a shopkeeper in a dispute with a neighboring shopkeeper over a shared storeroom, addressing the elder trader both sides asked to mediate. Spoken in front of the other party.",
+  "candidate": "You are our elder; the decision is in your hands."
+ },
+ {
+  "pair_id": 65,
+  "direction": "fa2en",
+  "source": "- یک پیاله چای بنوشید. \n- نه تشکر تازه صبحانه خوردم.",
+  "context": "The host of a shop is speaking to a client who has come to their shop and is offering them tea.",
+  "candidate": "- Have a cup of tea. - No, thanks. I just had breakfast."
+ },
+ {
+  "pair_id": 66,
+  "direction": "fa2en",
+  "source": "فکرهایم را می‌کنم، باز خدمت می‌رسم.",
+  "context": "Speaker: a customer at the door of a gemstone shop after an hour of viewing. Listener: the shopkeeper, who has offered his final price. The customer leaves with this phrase.",
+  "candidate": "My thoughts will I think, and I will serve."
+ },
+ {
+  "pair_id": 67,
+  "direction": "en2fa",
+  "source": "We'll keep your proposal on file and reach out if anything opens up.",
+  "context": "Speaker: a foreign distributor declining an Afghan pine-nut exporter's partnership proposal without saying so. Listener: the exporter, who spent two weeks preparing samples and pricing. Closing line of an email.",
+  "candidate": "پیشنهاد شما را در پرونده نگاه می‌داریم و اگر فرصتی پیش آید، با شما تماس می‌گیریم."
+ },
+ {
+  "pair_id": 68,
+  "direction": "fa2en",
+  "source": "صاحب اختیارید، هر چی شما بگویید؛ مگر انصاف هم خوب چیز است.",
+  "context": "Speaker: a saffron seller mid-bargain in his shop. Listener: a restaurant owner who buys monthly and has just named a price well under the going rate.",
+  "candidate": "You’re the one in charge, whatever you say; but fairness is also a good thing."
+ },
+ {
+  "pair_id": 69,
+  "direction": "en2fa",
+  "source": "Please send the signed contract by Monday, or we'll have to move forward with another supplier.",
+  "context": "Speaker: a young procurement officer abroad. Listener: an older Afghan marble supplier who hosted the officer's team generously during their site visit. The deadline is real.",
+  "candidate": "لطفاً قرارداد امضا شده را تا دوشنبه ارسال کنید، وگرنه مجبور خواهیم شد با تأمین‌کننده دیگری پیش برویم."
+ },
+ {
+  "pair_id": 70,
+  "direction": "en2fa",
+  "source": "After reviewing all bids, we've decided to go with another supplier this season.",
+  "context": "Speaker: a foreign procurement lead. Listener: an elder Afghan almond supplier who prepared his bid with help from his brothers and expected to win. First line of the rejection email.",
+  "candidate": "بعد از بررسی تمام پیشنهادات، ما تصمیم گرفتیم که این فصل با یک تامین کننده دیگه بریم"
+ },
+ {
+  "pair_id": 71,
+  "direction": "en2fa",
+  "source": "Second reminder: your account is now 45 days past due. We will pause further shipments until payment is received.",
+  "context": "Speaker: an accounts manager at a foreign trading company. Listener: an elder Afghan dried-fruit wholesaler, a profitable partner of six years who has always paid, though slowly. The company wants payment without losing him.",
+  "candidate": "این یادآوری دوم است: حساب شما اکنون ۴۵ روز از موعد پرداخت گذشته است. تا دریافت پرداخت، ارسال‌های بعدی را متوقف خواهیم کرد."
+ },
+ {
+  "pair_id": 72,
+  "direction": "fa2en",
+  "source": "کاکا جان، هر چه شما صلاح می‌بینید؛ فقط اگر اجازه باشد، یک عرض کوچک داشتم.",
+  "context": "Speaker: the youngest partner in a family import business. Listener: his father's elder brother, who has just decided to take a large loan for the business. The others at the table have said nothing.",
+  "candidate": "**Translation:**\n\n\"Dear Kaka, whatever you think is best; just, if I may, I had a small request to make.\"\n\n**A few notes on the nuances:**\n\n- **کاکا جان (Kaka jan)** – \"Kaka\" is an affectionate, respectful term (often used for an older brother, uncle, or respected man, especially in Afghan Persian), and \"jan\" adds warmth, like \"dear.\"\n- **هر چه شما صلاح می‌بینید** – literally \"whatever you see as appropriate,\" a deferential phrase meaning the speaker trusts the other person's judgment.\n- **عرض کوچک** – literally \"a small offering/statement,\" a humble and polite way of saying \"a small request\" or \"a brief point,\" typically used when addressing someone of higher status.\n\nThe overall tone is very polite and respectful, so an alternative rendering could be: *\"Kaka jan, whatever you deem fit — but if you'll allow me, I have one small request.\"*"
+ },
+ {
+  "pair_id": 73,
+  "direction": "en2fa",
+  "source": "Second reminder: your account is now 45 days past due. We will pause further shipments until payment is received.",
+  "context": "Speaker: an accounts manager at a foreign trading company. Listener: an elder Afghan dried-fruit wholesaler, a profitable partner of six years who has always paid, though slowly. The company wants payment without losing him.",
+  "candidate": "دومین یادآوری: حساب شما حالا 45 روز گذشته است."
+ },
+ {
+  "pair_id": 74,
+  "direction": "fa2en",
+  "source": "کار ما قابل شما نیست، یک چیز ناچیز است؛ امید که بد نشده باشد.",
+  "context": "Speaker: a tailor delivering a finished wedding suit he is proud of. Listener: the groom's father, a long-time customer, opening the package in the shop.",
+  "candidate": "My work is hardly worthy of you — it's just a small thing; I only hope it hasn't turned out badly."
+ },
+ {
+  "pair_id": 75,
+  "direction": "en2fa",
+  "source": "Sounds good. let's touch base soon and take it from there.",
+  "context": "Speaker: a European importer ending a video call about a possible saffron order. Listener: the Afghan supplier on the call. The importer is lukewarm and has made no commitment.",
+  "candidate": "باشه، خوبه. به زودی با هم در تماس باشیم و از آنجا ادامه دهیم."
+ },
+ {
+  "pair_id": 76,
+  "direction": "en2fa",
+  "source": "Thanks so much for sorting out the shipment — we owe you one!",
+  "context": "Speaker: a British importer whose Afghan partner spent a day fixing a customs problem for him. Listener: that partner. Sent as a quick text message.",
+  "candidate": "خیلی سپاس که مشکل محموله را حل کردید — واقعاً مدیون لطف تان هستیم!"
+ },
+ {
+  "pair_id": 77,
+  "direction": "fa2en",
+  "source": "- یک پیاله چای بنوشید. \n- نه تشکر تازه صبحانه خوردم.",
+  "context": "The host of a shop is speaking to a client who has come to their shop and is offering them tea.",
+  "candidate": "Please have a cup of tea.  \nNo, thank you—I just had breakfast."
+ },
+ {
+  "pair_id": 78,
+  "direction": "fa2en",
+  "source": "دست تان درد نکنه؛ نمک‌گیر شما شدیم، ای خوبی تان فراموش ما نمیشه.",
+  "context": "Speaker: a carpet exporter whose money changer quietly covered a transfer shortfall so a shipment could clear. Listener: the money changer (sarraf), on the phone the next morning. They have worked together for years.",
+  "candidate": "Thank you—may your hands never ache. We’ve become your salt shaker, and we’ll never forget your kindness."
+ },
+ {
+  "pair_id": 79,
+  "direction": "fa2en",
+  "source": "کاکا جان حرف تان روی دیده. هرچند من یک گفتنی کوچک داشتم.",
+  "context": "Niece is talking to his uncle and is thinking of phrasing a disagreement about the uncle's proposal that involves some requests from the niece's parents and siblings.",
+  "candidate": "Kaka John saw your words. Although I had a small talk."
+ },
+ {
+  "pair_id": 80,
+  "direction": "en2fa",
+  "source": "I'll see what I can do.",
+  "context": "Speaker: a freight forwarder asked by an Afghan exporter to find space on this week's fully booked cargo flight. Listener: the exporter, whose grapes will spoil if they miss the flight. The forwarder already knows the flight is full.",
+  "candidate": "**Dari translation:**\n\nمی‌بینم که چه می‌توانم بکنم\n\n**Transliteration:** *Mībīnam ke che mītavānam bokonam*\n\nA more colloquial Dari version you might hear in everyday conversation:\n\nمی‌بینم چی کار می‌تانم بکنم (*Mībīnam chi kār mītānam bokonam*)"
+ },
+ {
+  "pair_id": 81,
+  "direction": "fa2en",
+  "source": "صاحب اختیارید، هر چه شما بگویید.",
+  "context": "Speaker: a fabric seller mid-bargain. Listener: a regular customer who has just named a low price. The seller says this while folding the fabric, clearly not yet agreeing.",
+  "candidate": "Whatever you say is yours."
+ },
+ {
+  "pair_id": 82,
+  "direction": "fa2en",
+  "source": "ان‌شاءالله ببینیم خدا چه می‌خواهد؛ خبرتان می‌کنیم.",
+  "context": "Speaker: a dried-fruit supplier who cannot fill a large rush order. Listener: a new export buyer pressing for double the usual volume before the holidays. Spoken at the end of the meeting.",
+  "candidate": "God willing, we’ll see what God wants; we’ll keep you posted."
+ },
+ {
+  "pair_id": 83,
+  "direction": "en2fa",
+  "source": "Let me think it over and I'll circle back to you next week.",
+  "context": "Speaker: a European distributor who has decided against an Afghan saffron supplier's offer but avoids saying no directly. Listener: the supplier, who invested weeks preparing samples. Written at the end of an email.",
+  "candidate": "اجازه دهید آن را بررسی کنم و در هفته آینده با شما تماس می‌گیرم."
+ },
+ {
+  "pair_id": 84,
+  "direction": "fa2en",
+  "source": "شما بزرگ ما هستید، اختیار با شماست.",
+  "context": "Speaker: a shopkeeper in a dispute with a neighboring shopkeeper over a shared storeroom, addressing the elder trader both sides asked to mediate. Spoken in front of the other party.",
+  "candidate": "You are our great one, the power is with you."
+ },
+ {
+  "pair_id": 85,
+  "direction": "en2fa",
+  "source": "I'll see what I can do.",
+  "context": "Speaker: a freight forwarder asked by an Afghan exporter to find space on this week's fully booked cargo flight. Listener: the exporter, whose grapes will spoil if they miss the flight. The forwarder already knows the flight is full.",
+  "candidate": "من تمام تلاشم را می‌کنم."
+ },
+ {
+  "pair_id": 86,
+  "direction": "en2fa",
+  "source": "Thanks so much for sorting out the shipment — we owe you one!",
+  "context": "Speaker: a British importer whose Afghan partner spent a day fixing a customs problem for him. Listener: that partner. Sent as a quick text message.",
+  "candidate": "خیلی ممنونم که بارش رو حل کردین"
+ },
+ {
+  "pair_id": 87,
+  "direction": "fa2en",
+  "source": "کار ما قابل شما نیست، یک چیز ناچیز است؛ امید که بد نشده باشد.",
+  "context": "Speaker: a tailor delivering a finished wedding suit he is proud of. Listener: the groom's father, a long-time customer, opening the package in the shop.",
+  "candidate": "Our work is not worthy of you; it is a small thing; hopefully it is not bad."
+ },
+ {
+  "pair_id": 88,
+  "direction": "en2fa",
+  "source": "That's very generous, but we can't accept a discount on this one, our audit rules require we pay the listed price.",
+  "context": "Speaker: a foreign NGO logistics officer buying blankets in bulk. Listener: the Afghan wholesaler, who has offered a goodwill discount and will read a polite refusal as the opening move of taarof. The refusal is real and final.",
+  "candidate": "بسیار مهربانانه بود، اما نمی‌توانیم تخفیف را در این مورد بپذیریم؛ قوانین حسابرسی ما می‌طلبد که قیمت فهرست‌شده را پرداخت کنیم."
+ },
+ {
+  "pair_id": 89,
+  "direction": "en2fa",
+  "source": "A polite request before Thursday's visit: please, no gifts or lunch for the inspection team. it puts us in a difficult position with our head office.",
+  "context": "Speaker: a foreign quality-control coordinator writing ahead of a factory audit. Listener: the factory owner, whose hospitality to guests is a point of honor and who will instinctively read the request as modesty to be overridden.",
+  "candidate": "قبل از بازدید روز پنج‌شنبه، خواهشمندیم که برای تیم بازرسی هدایایی یا ناهار ندهید؛ زیرا این امر ما را در موقعیت دشواری با دفتر مرکزی قرار می‌دهد."
+ }
+]
